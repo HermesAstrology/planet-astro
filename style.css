@@ -297,3 +297,182 @@ footer {
         padding: 20px 15px;
     }
 }
+/* Add to your existing style.css */
+
+/* -----------------------------
+   SUN PAGE SPECIFIC STYLES
+--------------------------------*/
+
+/* Sun-specific box styles */
+.sun-signs-box {
+    border-left: 4px solid #ff6b6b;
+    background: linear-gradient(135deg, #fff8f8 0%, #ffffff 100%);
+}
+
+.sun-houses-box {
+    border-left: 4px solid #45b7d1;
+    background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+}
+
+.sun-keywords-box {
+    border-left: 4px solid #ffd93d;
+    background: linear-gradient(135deg, #fffce6 0%, #ffffff 100%);
+}
+
+/* Sign grid layout */
+.sign-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sign-grid div {
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sign-grid div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sign-grid a {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign-grid a:hover {
+    color: #0055cc;
+    text-decoration: none;
+}
+
+/* House links grid */
+.house-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.house-links li {
+    margin: 0;
+    padding: 12px 15px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.house-links li:hover {
+    background: #fff;
+    border-color: #ddd;
+    transform: translateX(3px);
+}
+
+.house-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.house-links a:hover {
+    color: #0055cc;
+}
+
+.sun-symbol {
+    color: #ff6b6b;
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+/* Keywords grid */
+.keywords-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.keyword-category {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.keyword-category h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.keyword-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.keyword-category li {
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.keyword-category li:last-child {
+    border-bottom: none;
+}
+
+.keyword-category strong {
+    color: #0055cc;
+}
+
+/* Note box */
+.note {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #45b7d1;
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.note strong {
+    color: #333;
+}
+
+/* Responsive adjustments for sun page */
+@media (max-width: 768px) {
+    .sign-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .house-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .keywords-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sign-grid div {
+        padding: 12px;
+    }
+}
