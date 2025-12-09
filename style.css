@@ -123,13 +123,6 @@ header p {
     border-bottom: none;
 }
 
-.box li:before {
-    content: "•";
-    color: #0055cc;
-    position: absolute;
-    left: 0;
-    font-size: 1.2rem;
-}
 
 /* -----------------------------
    SPECIFIC BOX VARIATIONS
