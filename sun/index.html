@@ -8,104 +8,246 @@
 
     <link rel="icon" href="/planets.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/style.css" />
+    
+    <!-- Add this if you want to keep the CSS consistent -->
+    <style>
+        /* Additional specific styles for this page */
+        .sun-hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .sun-hero img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+        }
+        
+        .sign-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .sign-grid li {
+            margin: 0;
+            padding: 12px 15px;
+            background: #fff8f8;
+            border-left: 3px solid #ff6b6b;
+            border-radius: 6px;
+        }
+        
+        .sign-grid li:nth-child(4n+2) {
+            background: #fffcf8;
+            border-left-color: #ffa94d;
+        }
+        
+        .sign-grid li:nth-child(4n+3) {
+            background: #f8fff8;
+            border-left-color: #51cf66;
+        }
+        
+        .sign-grid li:nth-child(4n+4) {
+            background: #f8f9ff;
+            border-left-color: #4dabf7;
+        }
+        
+        .house-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .house-links li {
+            margin: 0;
+            padding: 10px 15px;
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        
+        .sun-symbol {
+            color: #ff6b6b;
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+        
+        .note {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #45b7d1;
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
 
-<header class="header">
-    <div class="container">
-        <h1>The Sun in Astrology</h1>
-        <p class="subtitle">Meaning of the Sun in all zodiac signs and house placements</p>
-    </div>
+<header>
+    <img src="/planets.webp" alt="Astrology Planets Banner" />
+    <h1>The Sun in Astrology</h1>
+    <p>Meaning of the Sun in all zodiac signs and house placements</p>
 </header>
 
-<section class="hero container">
-    <img src="/sun.webp" alt="Sun Astrology Symbol" class="hero-image" />
-</section>
+<div class="container">
 
-<section class="container content">
-    <h2>Sun in the Zodiac Signs</h2>
-    <p>Your Sun sign reveals your core identity, purpose, vitality, and the life-force you radiate into the world. Select your Sun sign below to explore its deeper meaning.</p>
-
-    <ul class="link-list">
-        <li><a href="/sun/aries.html">Sun in Aries</a></li>
-        <li><a href="/sun/taurus.html">Sun in Taurus</a></li>
-        <li><a href="/sun/gemini.html">Sun in Gemini</a></li>
-        <li><a href="/sun/cancer.html">Sun in Cancer</a></li>
-        <li><a href="/sun/leo.html">Sun in Leo</a></li>
-        <li><a href="/sun/virgo.html">Sun in Virgo</a></li>
-        <li><a href="/sun/libra.html">Sun in Libra</a></li>
-        <li><a href="/sun/scorpio.html">Sun in Scorpio</a></li>
-        <li><a href="/sun/sagittarius.html">Sun in Sagittarius</a></li>
-        <li><a href="/sun/capricorn.html">Sun in Capricorn</a></li>
-        <li><a href="/sun/aquarius.html">Sun in Aquarius</a></li>
-        <li><a href="/sun/pisces.html">Sun in Pisces</a></li>
-    </ul>
-</section>
-
-<section class="container content">
-    <h2>Sun in Each House for All Zodiac Signs</h2>
-    <p>Discover how your Sun expresses itself depending on its house placement. Choose your Sun sign to see all 12 house interpretations.</p>
-
-    <ul class="link-list">
-        <li><a href="/sun/aries-1st-house.html">Sun in Aries – 1st House</a></li>
-        <li><a href="/sun/aries-2nd-house.html">Sun in Aries – 2nd House</a></li>
-        <li><a href="/sun/aries-3rd-house.html">Sun in Aries – 3rd House</a></li>
-        <li><a href="/sun/aries-4th-house.html">Sun in Aries – 4th House</a></li>
-        <li><a href="/sun/aries-5th-house.html">Sun in Aries – 5th House</a></li>
-        <li><a href="/sun/aries-6th-house.html">Sun in Aries – 6th House</a></li>
-        <li><a href="/sun/aries-7th-house.html">Sun in Aries – 7th House</a></li>
-        <li><a href="/sun/aries-8th-house.html">Sun in Aries – 8th House</a></li>
-        <li><a href="/sun/aries-9th-house.html">Sun in Aries – 9th House</a></li>
-        <li><a href="/sun/aries-10th-house.html">Sun in Aries – 10th House</a></li>
-        <li><a href="/sun/aries-11th-house.html">Sun in Aries – 11th House</a></li>
-        <li><a href="/sun/aries-12th-house.html">Sun in Aries – 12th House</a></li>
-        <!-- Expand similarly for all other signs -->
-    </ul>
-
-    <p class="note">(*Repeat the 12 house links for all 12 zodiac signs. I can generate them automatically if you want.)</p>
-</section>
-
-<section class="container cta">
-    <img src="/Astrologer_Guide.webp" alt="Astrologer's Guide" class="cta-image" />
-
-    <div class="cta-text">
-        <h2>Get Your Free Astrology Book</h2>
-        <p>For a limited time, you can receive a free copy of <strong>“The Astrologer's Guide: Mastering Birth Chart Interpretation”</strong> by subscribing to our newsletter.</p>
-
-        <a class="cta-button" href="https://hermesastrology.substack.com/p/your-free-book" target="_blank">
-            Download Your Free Book
-        </a>
+    <!-- HERO SECTION -->
+    <div class="box sun-hero">
+        <img src="/sun.webp" alt="Sun Astrology Symbol" />
+        <h2>The Sun: Your Core Identity</h2>
+        <p>The Sun represents your essential self, life purpose, vitality, and creative force. It shows where you shine brightest and how you express your unique individuality.</p>
     </div>
-</section>
 
-<section class="container author-box">
-    <img src="/logo_hermes.webp" alt="Hermes Astrology" class="author-image" />
+    <!-- SUN IN SIGNS SECTION -->
+    <div class="box sun-signs-box">
+        <h2>Sun in the Zodiac Signs</h2>
+        <p class="section-description">Your Sun sign reveals your core identity, purpose, vitality, and the life-force you radiate into the world. Select your Sun sign below to explore its deeper meaning.</p>
+        
+        <div class="sign-grid">
+            <div><a href="/sun/aries.html">Sun in Aries ♈</a></div>
+            <div><a href="/sun/taurus.html">Sun in Taurus ♉</a></div>
+            <div><a href="/sun/gemini.html">Sun in Gemini ♊</a></div>
+            <div><a href="/sun/cancer.html">Sun in Cancer ♋</a></div>
+            <div><a href="/sun/leo.html">Sun in Leo ♌</a></div>
+            <div><a href="/sun/virgo.html">Sun in Virgo ♍</a></div>
+            <div><a href="/sun/libra.html">Sun in Libra ♎</a></div>
+            <div><a href="/sun/scorpio.html">Sun in Scorpio ♏</a></div>
+            <div><a href="/sun/sagittarius.html">Sun in Sagittarius ♐</a></div>
+            <div><a href="/sun/capricorn.html">Sun in Capricorn ♑</a></div>
+            <div><a href="/sun/aquarius.html">Sun in Aquarius ♒</a></div>
+            <div><a href="/sun/pisces.html">Sun in Pisces ♓</a></div>
+        </div>
+    </div>
 
-    <div class="author-text">
-        <h3>About Hermes Astrology</h3>
-        <p><strong>Trusted Astrology Expert with 15,000+ Followers</strong></p>
+    <!-- SUN IN HOUSES SECTION -->
+    <div class="box sun-houses-box">
+        <h2>Sun in Each House for All Zodiac Signs</h2>
+        <p class="section-description">Discover how your Sun expresses itself depending on its house placement. The house shows the area of life where your solar energy is focused.</p>
+        
+        <h3>Sun in Aries – House Placements</h3>
+        <ul class="house-links">
+            <li><a href="/sun/aries-1st-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 1st House</a></li>
+            <li><a href="/sun/aries-2nd-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 2nd House</a></li>
+            <li><a href="/sun/aries-3rd-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 3rd House</a></li>
+            <li><a href="/sun/aries-4th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 4th House</a></li>
+            <li><a href="/sun/aries-5th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 5th House</a></li>
+            <li><a href="/sun/aries-6th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 6th House</a></li>
+            <li><a href="/sun/aries-7th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 7th House</a></li>
+            <li><a href="/sun/aries-8th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 8th House</a></li>
+            <li><a href="/sun/aries-9th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 9th House</a></li>
+            <li><a href="/sun/aries-10th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 10th House</a></li>
+            <li><a href="/sun/aries-11th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 11th House</a></li>
+            <li><a href="/sun/aries-12th-house.html"><span class="sun-symbol">☉</span> Sun in Aries – 12th House</a></li>
+        </ul>
+        
+        <div class="note">
+            <p><strong>Note:</strong> Similar house placements are available for all zodiac signs. The patterns above show the structure for Aries – each sign follows the same house progression.</p>
+        </div>
+    </div>
 
+    <!-- SUN KEYWORDS SECTION -->
+    <div class="box sun-keywords-box">
+        <h2>Understanding the Sun</h2>
+        <div class="keywords-grid">
+            <div class="keyword-category">
+                <h3>Core Meanings</h3>
+                <ul>
+                    <li><strong>Identity:</strong> Your essential self</li>
+                    <li><strong>Vitality:</strong> Life force and energy</li>
+                    <li><strong>Purpose:</strong> Life direction and goals</li>
+                    <li><strong>Will:</strong> Conscious intentions</li>
+                    <li><strong>Creativity:</strong> Self-expression</li>
+                </ul>
+            </div>
+            <div class="keyword-category">
+                <h3>What the Sun Governs</h3>
+                <ul>
+                    <li>Ego and self-awareness</li>
+                    <li>Confidence and authority</li>
+                    <li>Leadership abilities</li>
+                    <li>Father or paternal figures</li>
+                    <li>Career and public image</li>
+                </ul>
+            </div>
+            <div class="keyword-category">
+                <h3>Astrological Details</h3>
+                <ul>
+                    <li><strong>Element:</strong> Fire</li>
+                    <li><strong>Gender:</strong> Masculine</li>
+                    <li><strong>Rules:</strong> Leo ♌</li>
+                    <li><strong>Detriment:</strong> Aquarius ♒</li>
+                    <li><strong>Exaltation:</strong> Aries ♈</li>
+                    <li><strong>Fall:</strong> Libra ♎</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA SECTION -->
+    <div class="box cta-box">
+        <img src="/Astrologer_Guide.webp" alt="Free Astrology Book - The Astrologer's Guide" />
+        <h2>Master Birth Chart Interpretation</h2>
         <p>
-            📧 <strong>10,000+ Substack Subscribers:</strong>
-            <a href="https://hermesastrology.substack.com/" target="_blank">Subscribe here</a><br>
-
-            ✍️ <strong>5,000+ Medium Followers:</strong>
-            <a href="https://medium.com/@HermesAstrology" target="_blank">Read articles</a>
+            <strong>For a limited time, receive a free copy of 
+            <em>'The Astrologer's Guide: Mastering Birth Chart Interpretation'</em></strong>
         </p>
-
-        <p class="quote">“Decode Your Lifepath, Empower Your Present, and Light the Way for Others.”</p>
-
-        <p>
-            Hermes Astrology brings ancient astrological wisdom to the modern seeker, combining traditional techniques with 
-            contemporary psychological insights. With over 15,000 dedicated followers, Hermes offers accurate, transformative 
-            astrological guidance to help you navigate life’s challenges through planetary wisdom.
+        <p>This comprehensive guide includes detailed analysis of:</p>
+        <ul>
+            <li>Sun sign interpretations in all 12 houses</li>
+            <li>Planetary aspect combinations</li>
+            <li>Transit timing for personal growth</li>
+            <li>Practical chart reading exercises</li>
+        </ul>
+        <p class="cta-button">
+            <a href="https://hermesastrology.substack.com/p/your-free-book" target="_blank">
+                ➜ Get Your Free Astrology Book
+            </a>
         </p>
     </div>
-</section>
 
-<footer class="footer">
-    <p>© 2025 Hermes Astrology. All rights reserved.</p>
+    <!-- AUTHOR SECTION -->
+    <div class="box author-box">
+        <div class="author-flex">
+            <img src="/logo_hermes.webp" alt="Hermes Astrology - Author Photo" />
+
+            <div>
+                <h3>About Hermes Astrology</h3>
+                <p><strong>Trusted Astrology Expert with 15,000+ Followers</strong></p>
+
+                <p>
+                    📧 10,000+ Substack Subscribers:  
+                    <a href="https://hermesastrology.substack.com/" target="_blank">hermesastrology.substack.com</a>
+                </p>
+
+                <p>
+                    ✍️ 5,000+ Medium Followers:  
+                    <a href="https://medium.com/@HermesAstrology" target="_blank">@HermesAstrology on Medium</a>
+                </p>
+
+                <p><em>"Decode Your Lifepath, Empower Your Present, and Light the Way for Others."</em></p>
+
+                <p>
+                    Hermes Astrology brings ancient astrological wisdom to the modern seeker,
+                    combining traditional techniques with contemporary psychological insights.
+                    With a global community of over 15,000 followers, Hermes offers accurate,
+                    transformative guidance that helps individuals navigate life's challenges through
+                    planetary wisdom.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end container -->
+
+<footer>
+    © 2025 Hermes Astrology — Planet-Astro.com
 </footer>
 
 </body>
