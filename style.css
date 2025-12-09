@@ -19,13 +19,23 @@ body {
     margin: 0;
 }
 
-/* Default link styling */
 a {
     color: #0055cc;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
+}
+
+/* -----------------------------
+   UNIVERSAL BOX STYLES
+--------------------------------*/
+.box {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 /* -----------------------------
@@ -76,14 +86,10 @@ li {
 }
 
 /* -----------------------------
-   CTA BOX
+   SPECIFIC BOX VARIATIONS
 --------------------------------*/
 .cta-box {
-    margin-top: 50px;
-    padding: 25px;
-    background: #ffffff;
-    border: 2px solid #ddd;
-    border-radius: 8px;
+    border-width: 2px;
     text-align: center;
 }
 
@@ -92,15 +98,8 @@ li {
     margin-bottom: 15px;
 }
 
-/* -----------------------------
-   AUTHOR BOX
---------------------------------*/
 .author-box {
-    margin-top: 50px;
-    padding: 25px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    /* Inherits from .box */
 }
 
 .author-flex {
