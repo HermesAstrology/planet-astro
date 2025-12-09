@@ -1,261 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore the meaning of the Sun in every zodiac sign and house combination. Learn how your Sun sign shapes personality, purpose, vitality, and destiny." />
-    <title>Sun in Astrology – Signs & Houses | Hermes Astrology</title>
+/* -----------------------------
+   GLOBAL RESET
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <link rel="icon" href="/planets.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/style.css" />
-</head>
+/* -----------------------------
+   BASE TYPOGRAPHY
+--------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.65;
+    background: #fafafa;
+    color: #222;
+    padding: 0;
+    margin: 0;
+}
 
-<body>
+/* Default link styling */
+a {
+    color: #0055cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
-<header class="header">
-    <div class="container">
-        <h1>The Sun in Astrology</h1>
-        <p class="subtitle">Meaning of the Sun in all zodiac signs and house placements</p>
-    </div>
-</header>
+/* -----------------------------
+   HEADER
+--------------------------------*/
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
 
-<!-- HERO IMAGE IN A BOX -->
-<section class="container image-box">
-    <img src="/sun.webp" alt="Sun Astrology Symbol" />
-</section>
+header img {
+    max-width: 280px;
+    height: auto;
+}
 
-<section class="container content">
-    <h2>Sun in the Zodiac Signs</h2>
-    <ul class="link-list">
-        <li><a href="/sun/aries.html">Sun in Aries</a></li>
-        <li><a href="/sun/taurus.html">Sun in Taurus</a></li>
-        <li><a href="/sun/gemini.html">Sun in Gemini</a></li>
-        <li><a href="/sun/cancer.html">Sun in Cancer</a></li>
-        <li><a href="/sun/leo.html">Sun in Leo</a></li>
-        <li><a href="/sun/virgo.html">Sun in Virgo</a></li>
-        <li><a href="/sun/libra.html">Sun in Libra</a></li>
-        <li><a href="/sun/scorpio.html">Sun in Scorpio</a></li>
-        <li><a href="/sun/sagittarius.html">Sun in Sagittarius</a></li>
-        <li><a href="/sun/capricorn.html">Sun in Capricorn</a></li>
-        <li><a href="/sun/aquarius.html">Sun in Aquarius</a></li>
-        <li><a href="/sun/pisces.html">Sun in Pisces</a></li>
-    </ul>
-</section>
+header h1 {
+    margin-top: 20px;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
 
-<section class="container content">
-    <h2>Sun in Each House (All 144 Placements)</h2>
+/* -----------------------------
+   MAIN CONTAINER
+--------------------------------*/
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
 
-    <p>Select your sign to view all 12 houses:</p>
+h2 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
 
-    <!-- FULL LIST OF ALL 12 SIGNS × 12 HOUSES -->
-    <ul class="link-list">
-        <!-- ARIES -->
-        <li><a href="/sun/aries-1st-house.html">Sun in Aries – 1st House</a></li>
-        <li><a href="/sun/aries-2nd-house.html">Sun in Aries – 2nd House</a></li>
-        <li><a href="/sun/aries-3rd-house.html">Sun in Aries – 3rd House</a></li>
-        <li><a href="/sun/aries-4th-house.html">Sun in Aries – 4th House</a></li>
-        <li><a href="/sun/aries-5th-house.html">Sun in Aries – 5th House</a></li>
-        <li><a href="/sun/aries-6th-house.html">Sun in Aries – 6th House</a></li>
-        <li><a href="/sun/aries-7th-house.html">Sun in Aries – 7th House</a></li>
-        <li><a href="/sun/aries-8th-house.html">Sun in Aries – 8th House</a></li>
-        <li><a href="/sun/aries-9th-house.html">Sun in Aries – 9th House</a></li>
-        <li><a href="/sun/aries-10th-house.html">Sun in Aries – 10th House</a></li>
-        <li><a href="/sun/aries-11th-house.html">Sun in Aries – 11th House</a></li>
-        <li><a href="/sun/aries-12th-house.html">Sun in Aries – 12th House</a></li>
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
-        <!-- TAURUS -->
-        <li><a href="/sun/taurus-1st-house.html">Sun in Taurus – 1st House</a></li>
-        <li><a href="/sun/taurus-2nd-house.html">Sun in Taurus – 2nd House</a></li>
-        <li><a href="/sun/taurus-3rd-house.html">Sun in Taurus – 3rd House</a></li>
-        <li><a href="/sun/taurus-4th-house.html">Sun in Taurus – 4th House</a></li>
-        <li><a href="/sun/taurus-5th-house.html">Sun in Taurus – 5th House</a></li>
-        <li><a href="/sun/taurus-6th-house.html">Sun in Taurus – 6th House</a></li>
-        <li><a href="/sun/taurus-7th-house.html">Sun in Taurus – 7th House</a></li>
-        <li><a href="/sun/taurus-8th-house.html">Sun in Taurus – 8th House</a></li>
-        <li><a href="/sun/taurus-9th-house.html">Sun in Taurus – 9th House</a></li>
-        <li><a href="/sun/taurus-10th-house.html">Sun in Taurus – 10th House</a></li>
-        <li><a href="/sun/taurus-11th-house.html">Sun in Taurus – 11th House</a></li>
-        <li><a href="/sun/taurus-12th-house.html">Sun in Taurus – 12th House</a></li>
+li {
+    margin: 7px 0;
+}
 
-        <!-- GEMINI -->
-        <li><a href="/sun/gemini-1st-house.html">Sun in Gemini – 1st House</a></li>
-        <li><a href="/sun/gemini-2nd-house.html">Sun in Gemini – 2nd House</a></li>
-        <li><a href="/sun/gemini-3rd-house.html">Sun in Gemini – 3rd House</a></li>
-        <li><a href="/sun/gemini-4th-house.html">Sun in Gemini – 4th House</a></li>
-        <li><a href="/sun/gemini-5th-house.html">Sun in Gemini – 5th House</a></li>
-        <li><a href="/sun/gemini-6th-house.html">Sun in Gemini – 6th House</a></li>
-        <li><a href="/sun/gemini-7th-house.html">Sun in Gemini – 7th House</a></li>
-        <li><a href="/sun/gemini-8th-house.html">Sun in Gemini – 8th House</a></li>
-        <li><a href="/sun/gemini-9th-house.html">Sun in Gemini – 9th House</a></li>
-        <li><a href="/sun/gemini-10th-house.html">Sun in Gemini – 10th House</a></li>
-        <li><a href="/sun/gemini-11th-house.html">Sun in Gemini – 11th House</a></li>
-        <li><a href="/sun/gemini-12th-house.html">Sun in Gemini – 12th House</a></li>
+/* -----------------------------
+   CTA BOX
+--------------------------------*/
+.cta-box {
+    margin-top: 50px;
+    padding: 25px;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
 
-        <!-- CANCER -->
-        <li><a href="/sun/cancer-1st-house.html">Sun in Cancer – 1st House</a></li>
-        <li><a href="/sun/cancer-2nd-house.html">Sun in Cancer – 2nd House</a></li>
-        <li><a href="/sun/cancer-3rd-house.html">Sun in Cancer – 3rd House</a></li>
-        <li><a href="/sun/cancer-4th-house.html">Sun in Cancer – 4th House</a></li>
-        <li><a href="/sun/cancer-5th-house.html">Sun in Cancer – 5th House</a></li>
-        <li><a href="/sun/cancer-6th-house.html">Sun in Cancer – 6th House</a></li>
-        <li><a href="/sun/cancer-7th-house.html">Sun in Cancer – 7th House</a></li>
-        <li><a href="/sun/cancer-8th-house.html">Sun in Cancer – 8th House</a></li>
-        <li><a href="/sun/cancer-9th-house.html">Sun in Cancer – 9th House</a></li>
-        <li><a href="/sun/cancer-10th-house.html">Sun in Cancer – 10th House</a></li>
-        <li><a href="/sun/cancer-11th-house.html">Sun in Cancer – 11th House</a></li>
-        <li><a href="/sun/cancer-12th-house.html">Sun in Cancer – 12th House</a></li>
+.cta-box img {
+    max-width: 220px;
+    margin-bottom: 15px;
+}
 
-        <!-- LEO -->
-        <li><a href="/sun/leo-1st-house.html">Sun in Leo – 1st House</a></li>
-        <li><a href="/sun/leo-2nd-house.html">Sun in Leo – 2nd House</a></li>
-        <li><a href="/sun/leo-3rd-house.html">Sun in Leo – 3rd House</a></li>
-        <li><a href="/sun/leo-4th-house.html">Sun in Leo – 4th House</a></li>
-        <li><a href="/sun/leo-5th-house.html">Sun in Leo – 5th House</a></li>
-        <li><a href="/sun/leo-6th-house.html">Sun in Leo – 6th House</a></li>
-        <li><a href="/sun/leo-7th-house.html">Sun in Leo – 7th House</a></li>
-        <li><a href="/sun/leo-8th-house.html">Sun in Leo – 8th House</a></li>
-        <li><a href="/sun/leo-9th-house.html">Sun in Leo – 9th House</a></li>
-        <li><a href="/sun/leo-10th-house.html">Sun in Leo – 10th House</a></li>
-        <li><a href="/sun/leo-11th-house.html">Sun in Leo – 11th House</a></li>
-        <li><a href="/sun/leo-12th-house.html">Sun in Leo – 12th House</a></li>
+/* -----------------------------
+   AUTHOR BOX
+--------------------------------*/
+.author-box {
+    margin-top: 50px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
-        <!-- VIRGO -->
-        <li><a href="/sun/virgo-1st-house.html">Sun in Virgo – 1st House</a></li>
-        <li><a href="/sun/virgo-2nd-house.html">Sun in Virgo – 2nd House</a></li>
-        <li><a href="/sun/virgo-3rd-house.html">Sun in Virgo – 3rd House</a></li>
-        <li><a href="/sun/virgo-4th-house.html">Sun in Virgo – 4th House</a></li>
-        <li><a href="/sun/virgo-5th-house.html">Sun in Virgo – 5th House</a></li>
-        <li><a href="/sun/virgo-6th-house.html">Sun in Virgo – 6th House</a></li>
-        <li><a href="/sun/virgo-7th-house.html">Sun in Virgo – 7th House</a></li>
-        <li><a href="/sun/virgo-8th-house.html">Sun in Virgo – 8th House</a></li>
-        <li><a href="/sun/virgo-9th-house.html">Sun in Virgo – 9th House</a></li>
-        <li><a href="/sun/virgo-10th-house.html">Sun in Virgo – 10th House</a></li>
-        <li><a href="/sun/virgo-11th-house.html">Sun in Virgo – 11th House</a></li>
-        <li><a href="/sun/virgo-12th-house.html">Sun in Virgo – 12th House</a></li>
+.author-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-        <!-- LIBRA -->
-        <li><a href="/sun/libra-1st-house.html">Sun in Libra – 1st House</a></li>
-        <li><a href="/sun/libra-2nd-house.html">Sun in Libra – 2nd House</a></li>
-        <li><a href="/sun/libra-3rd-house.html">Sun in Libra – 3rd House</a></li>
-        <li><a href="/sun/libra-4th-house.html">Sun in Libra – 4th House</a></li>
-        <li><a href="/sun/libra-5th-house.html">Sun in Libra – 5th House</a></li>
-        <li><a href="/sun/libra-6th-house.html">Sun in Libra – 6th House</a></li>
-        <li><a href="/sun/libra-7th-house.html">Sun in Libra – 7th House</a></li>
-        <li><a href="/sun/libra-8th-house.html">Sun in Libra – 8th House</a></li>
-        <li><a href="/sun/libra-9th-house.html">Sun in Libra – 9th House</a></li>
-        <li><a href="/sun/libra-10th-house.html">Sun in Libra – 10th House</a></li>
-        <li><a href="/sun/libra-11th-house.html">Sun in Libra – 11th House</a></li>
-        <li><a href="/sun/libra-12th-house.html">Sun in Libra – 12th House</a></li>
+.author-flex img {
+    width: 150px;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
 
-        <!-- SCORPIO -->
-        <li><a href="/sun/scorpio-1st-house.html">Sun in Scorpio – 1st House</a></li>
-        <li><a href="/sun/scorpio-2nd-house.html">Sun in Scorpio – 2nd House</a></li>
-        <li><a href="/sun/scorpio-3rd-house.html">Sun in Scorpio – 3rd House</a></li>
-        <li><a href="/sun/scorpio-4th-house.html">Sun in Scorpio – 4th House</a></li>
-        <li><a href="/sun/scorpio-5th-house.html">Sun in Scorpio – 5th House</a></li>
-        <li><a href="/sun/scorpio-6th-house.html">Sun in Scorpio – 6th House</a></li>
-        <li><a href="/sun/scorpio-7th-house.html">Sun in Scorpio – 7th House</a></li>
-        <li><a href="/sun/scorpio-8th-house.html">Sun in Scorpio – 8th House</a></li>
-        <li><a href="/sun/scorpio-9th-house.html">Sun in Scorpio – 9th House</a></li>
-        <li><a href="/sun/scorpio-10th-house.html">Sun in Scorpio – 10th House</a></li>
-        <li><a href="/sun/scorpio-11th-house.html">Sun in Scorpio – 11th House</a></li>
-        <li><a href="/sun/scorpio-12th-house.html">Sun in Scorpio – 12th House</a></li>
+.author-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
 
-        <!-- SAGITTARIUS -->
-        <li><a href="/sun/sagittarius-1st-house.html">Sun in Sagittarius – 1st House</a></li>
-        <li><a href="/sun/sagittarius-2nd-house.html">Sun in Sagittarius – 2nd House</a></li>
-        <li><a href="/sun/sagittarius-3rd-house.html">Sun in Sagittarius – 3rd House</a></li>
-        <li><a href="/sun/sagittarius-4th-house.html">Sun in Sagittarius – 4th House</a></li>
-        <li><a href="/sun/sagittarius-5th-house.html">Sun in Sagittarius – 5th House</a></li>
-        <li><a href="/sun/sagittarius-6th-house.html">Sun in Sagittarius – 6th House</a></li>
-        <li><a href="/sun/sagittarius-7th-house.html">Sun in Sagittarius – 7th House</a></li>
-        <li><a href="/sun/sagittarius-8th-house.html">Sun in Sagittarius – 8th House</a></li>
-        <li><a href="/sun/sagittarius-9th-house.html">Sun in Sagittarius – 9th House</a></li>
-        <li><a href="/sun/sagittarius-10th-house.html">Sun in Sagittarius – 10th House</a></li>
-        <li><a href="/sun/sagittarius-11th-house.html">Sun in Sagittarius – 11th House</a></li>
-        <li><a href="/sun/sagittarius-12th-house.html">Sun in Sagittarius – 12th House</a></li>
+/* -----------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
 
-        <!-- CAPRICORN -->
-        <li><a href="/sun/capricorn-1st-house.html">Sun in Capricorn – 1st House</a></li>
-        <li><a href="/sun/capricorn-2nd-house.html">Sun in Capricorn – 2nd House</a></li>
-        <li><a href="/sun/capricorn-3rd-house.html">Sun in Capricorn – 3rd House</a></li>
-        <li><a href="/sun/capricorn-4th-house.html">Sun in Capricorn – 4th House</a></li>
-        <li><a href="/sun/capricorn-5th-house.html">Sun in Capricorn – 5th House</a></li>
-        <li><a href="/sun/capricorn-6th-house.html">Sun in Capricorn – 6th House</a></li>
-        <li><a href="/sun/capricorn-7th-house.html">Sun in Capricorn – 7th House</a></li>
-        <li><a href="/sun/capricorn-8th-house.html">Sun in Capricorn – 8th House</a></li>
-        <li><a href="/sun/capricorn-9th-house.html">Sun in Capricorn – 9th House</a></li>
-        <li><a href="/sun/capricorn-10th-house.html">Sun in Capricorn – 10th House</a></li>
-        <li><a href="/sun/capricorn-11th-house.html">Sun in Capricorn – 11th House</a></li>
-        <li><a href="/sun/capricorn-12th-house.html">Sun in Capricorn – 12th House</a></li>
-
-        <!-- AQUARIUS -->
-        <li><a href="/sun/aquarius-1st-house.html">Sun in Aquarius – 1st House</a></li>
-        <li><a href="/sun/aquarius-2nd-house.html">Sun in Aquarius – 2nd House</a></li>
-        <li><a href="/sun/aquarius-3rd-house.html">Sun in Aquarius – 3rd House</a></li>
-        <li><a href="/sun/aquarius-4th-house.html">Sun in Aquarius – 4th House</a></li>
-        <li><a href="/sun/aquarius-5th-house.html">Sun in Aquarius – 5th House</a></li>
-        <li><a href="/sun/aquarius-6th-house.html">Sun in Aquarius – 6th House</a></li>
-        <li><a href="/sun/aquarius-7th-house.html">Sun in Aquarius – 7th House</a></li>
-        <li><a href="/sun/aquarius-8th-house.html">Sun in Aquarius – 8th House</a></li>
-        <li><a href="/sun/aquarius-9th-house.html">Sun in Aquarius – 9th House</a></li>
-        <li><a href="/sun/aquarius-10th-house.html">Sun in Aquarius – 10th House</a></li>
-        <li><a href="/sun/aquarius-11th-house.html">Sun in Aquarius – 11th House</a></li>
-        <li><a href="/sun/aquarius-12th-house.html">Sun in Aquarius – 12th House</a></li>
-
-        <!-- PISCES -->
-        <li><a href="/sun/pisces-1st-house.html">Sun in Pisces – 1st House</a></li>
-        <li><a href="/sun/pisces-2nd-house.html">Sun in Pisces – 2nd House</a></li>
-        <li><a href="/sun/pisces-3rd-house.html">Sun in Pisces – 3rd House</a></li>
-        <li><a href="/sun/pisces-4th-house.html">Sun in Pisces – 4th House</a></li>
-        <li><a href="/sun/pisces-5th-house.html">Sun in Pisces – 5th House</a></li>
-        <li><a href="/sun/pisces-6th-house.html">Sun in Pisces – 6th House</a></li>
-        <li><a href="/sun/pisces-7th-house.html">Sun in Pisces – 7th House</a></li>
-        <li><a href="/sun/pisces-8th-house.html">Sun in Pisces – 8th House</a></li>
-        <li><a href="/sun/pisces-9th-house.html">Sun in Pisces – 9th House</a></li>
-        <li><a href="/sun/pisces-10th-house.html">Sun in Pisces – 10th House</a></li>
-        <li><a href="/sun/pisces-11th-house.html">Sun in Pisces – 11th House</a></li>
-        <li><a href="/sun/pisces-12th-house.html">Sun in Pisces – 12th House</a></li>
-    </ul>
-
-</section>
-
-
-<!-- CTA -->
-<section class="container image-box cta">
-    <img src="/Astrologer_Guide.webp" alt="Astrologer's Guide" />
-    <div class="cta-text">
-        <h2>Get Your Free Astrology Book</h2>
-        <p>For a limited time, you can receive a free copy of <strong>“The Astrologer's Guide: Mastering Birth Chart Interpretation”</strong> by subscribing to our newsletter.</p>
-        <a class="cta-button" href="https://hermesastrology.substack.com/p/your-free-book" target="_blank">Download Your Free Book</a>
-    </div>
-</section>
-
-
-<!-- AUTHOR BOX -->
-<section class="container image-box author-box">
-    <img src="/logo_hermes.webp" alt="Hermes Astrology" />
-    <div class="author-text">
-        <h3>About Hermes Astrology</h3>
-        <p><strong>Trusted Astrology Expert with 15,000+ Followers</strong></p>
-        <p>
-            📧 <strong>10,000+ Substack Subscribers:</strong>
-            <a href="https://hermesastrology.substack.com/" target="_blank">Subscribe here</a><br>
-            ✍️ <strong>5,000+ Medium Followers:</strong>
-            <a href="https://medium.com/@HermesAstrology" target="_blank">Read articles</a>
-        </p>
-        <p class="quote">“Decode Your Lifepath, Empower Your Present, and Light the Way for Others.”</p>
-        <p>
-            Hermes Astrology brings ancient astrological wisdom to the modern seeker, combining traditional techniques with 
-            contemporary psychological insights.
-        </p>
-    </div>
-</section>
-
-
-<footer class="footer">
-    <p>© 2025 Hermes Astrology. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+/* -----------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .author-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .author-flex img {
+        margin-bottom: 15px;
+    }
+}
