@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Complete guide to Sun in Capricorn: personality traits, strengths, challenges, career, love life, and destiny. Learn how Capricorn energy shapes your core identity and ambitious purpose." />
-    <title>Sun in Capricorn: Complete Guide ♑ Personality, Career & Destiny</title>
+    <meta name="description" content="Complete guide to Sun in Libra: personality traits, strengths, challenges, career, love life, and destiny. Learn how Libra energy shapes your diplomatic nature and quest for harmony." />
+    <title>Sun in Libra: Complete Guide ♎ Personality, Career & Destiny</title>
 
     <link rel="icon" href="/planets.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/style.css" />
     
     <style>
-        /* Additional styles for Sun in Capricorn page */
-        .hero-capricorn-sun {
+        /* Libra-specific styles */
+        .hero-libra-sun {
             text-align: center;
             margin-bottom: 40px;
+            position: relative;
         }
         
-        .hero-capricorn-sun img {
-            max-width: 250px;
+        .hero-libra-sun img {
+            max-width: 280px;
             height: auto;
             border-radius: 50%;
-            box-shadow: 0 8px 25px rgba(128, 128, 128, 0.3);
+            box-shadow: 0 8px 25px rgba(123, 31, 162, 0.3);
             margin-bottom: 20px;
-            border: 3px solid #546e7a;
+            border: 3px solid #7b1fa2;
+        }
+        
+        .hero-libra-sun::after {
+            content: "♎";
+            font-size: 4rem;
+            color: rgba(123, 31, 162, 0.1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
         }
         
         .publication-date {
@@ -40,7 +52,7 @@
         
         .content-section h2 {
             color: #333;
-            border-bottom: 3px solid #546e7a;
+            border-bottom: 3px solid #7b1fa2;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -53,8 +65,8 @@
         }
         
         .highlight-box {
-            background: #f5f5f5;
-            border-left: 4px solid #546e7a;
+            background: #f3e5f5;
+            border-left: 4px solid #7b1fa2;
             padding: 20px;
             margin: 25px 0;
             border-radius: 0 8px 8px 0;
@@ -72,17 +84,23 @@
             background: #f9f9f9;
             border-radius: 8px;
             border: 1px solid #eee;
+            transition: transform 0.3s ease;
+        }
+        
+        .key-point:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(123, 31, 162, 0.1);
         }
         
         .key-point h4 {
             margin-top: 0;
-            color: #37474f;
+            color: #7b1fa2;
             font-size: 1.2rem;
         }
         
         .mythology-box {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
+            background: #f3e5f5;
+            border: 1px solid #e1bee7;
             border-radius: 8px;
             padding: 25px;
             margin: 30px 0;
@@ -99,7 +117,7 @@
         }
         
         .traits-table th {
-            background: #546e7a;
+            background: linear-gradient(135deg, #7b1fa2, #e91e63);
             color: white;
             padding: 15px;
             text-align: left;
@@ -115,7 +133,7 @@
         }
         
         .traits-table tr:nth-child(even) {
-            background: #f9f9f9;
+            background: #f8f9fa;
         }
         
         .navigation-links {
@@ -136,25 +154,38 @@
         }
         
         .nav-link:hover {
-            background: #546e7a;
+            background: linear-gradient(135deg, #7b1fa2, #e91e63);
             color: white;
             text-decoration: none;
+            transform: translateY(-2px);
         }
         
-        .capricorn-color {
-            color: #37474f;
+        .libra-color {
+            color: #7b1fa2;
             font-weight: bold;
         }
         
-        .earth-element {
+        .air-element {
             display: inline-block;
             padding: 4px 12px;
-            background: #f5f5f5;
-            color: #37474f;
-            border: 1px solid #dee2e6;
+            background: #f3e5f5;
+            color: #7b1fa2;
+            border: 1px solid #e1bee7;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: bold;
+        }
+        
+        .cardinal-element {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e8eaf6;
+            color: #3949ab;
+            border: 1px solid #c5cae9;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-left: 5px;
         }
         
         .houses-grid {
@@ -166,17 +197,23 @@
         
         .house-card {
             padding: 15px;
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
+            background: #f3e5f5;
+            border: 1px solid #e1bee7;
             border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .house-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(123, 31, 162, 0.1);
         }
         
         .house-card h4 {
             margin-top: 0;
-            color: #37474f;
+            color: #7b1fa2;
         }
         
-        .ambitious-badge {
+        .diplomacy-badge {
             display: inline-block;
             padding: 2px 8px;
             background: #e8eaf6;
@@ -187,15 +224,45 @@
             margin-left: 5px;
         }
         
-        .success-badge {
+        .beauty-badge {
             display: inline-block;
             padding: 2px 8px;
-            background: #e8f5e9;
-            color: #2e7d32;
-            border: 1px solid #c8e6c9;
+            background: #fff3e0;
+            color: #e65100;
+            border: 1px solid #ffe0b2;
             border-radius: 4px;
             font-size: 0.8rem;
             margin-left: 5px;
+        }
+        
+        .harmony-tag {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #c8e6c9;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin: 0 2px;
+        }
+        
+        .justice-tag {
+            background: #e3f2fd;
+            color: #1565c0;
+            border: 1px solid #bbdefb;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin: 0 2px;
+        }
+        
+        .partnership-tag {
+            background: #fce4ec;
+            color: #c2185b;
+            border: 1px solid #f8bbd9;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin: 0 2px;
         }
         
         @media (max-width: 768px) {
@@ -205,6 +272,8 @@
             
             .traits-table {
                 font-size: 0.9rem;
+                display: block;
+                overflow-x: auto;
             }
             
             .houses-grid {
@@ -220,23 +289,146 @@
                 text-align: center;
             }
         }
+        
+        /* New Libra-specific styles */
+        .libra-icon {
+            font-size: 1.2em;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #f3e5f5, #fce4ec);
+            border-left: 4px solid #7b1fa2;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .quote-box::before {
+            content: '"';
+            font-size: 4rem;
+            color: #7b1fa2;
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .planet-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            background: #f3e5f5;
+            color: #7b1fa2;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px;
+        }
+        
+        .planet-badge img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+        
+        .scales-illustration {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 3rem;
+            color: #7b1fa2;
+            opacity: 0.3;
+        }
+        
+        .balance-indicator {
+            height: 4px;
+            background: linear-gradient(90deg, #7b1fa2 0%, #ffffff 50%, #e91e63 100%);
+            margin: 15px 0;
+            border-radius: 2px;
+            position: relative;
+        }
+        
+        .balance-indicator::before {
+            content: "Balance Point";
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #7b1fa2;
+            font-weight: bold;
+        }
+        
+        .aesthetic-bg {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><circle cx="30" cy="50" r="20" stroke="%237b1fa2" stroke-width="0.5" fill="none" opacity="0.1"/><circle cx="70" cy="50" r="20" stroke="%23e91e63" stroke-width="0.5" fill="none" opacity="0.1"/><line x1="30" y1="50" x2="70" y2="50" stroke="%23333" stroke-width="0.3" opacity="0.2"/></svg>');
+            background-repeat: repeat;
+            background-size: 100px 100px;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .justice-scale {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .scale-pan {
+            width: 40px;
+            height: 40px;
+            background: #7b1fa2;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 20px;
+            opacity: 0.3;
+        }
+        
+        .scale-pan::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #333;
+            top: 50%;
+            left: -10px;
+            transform: translateY(-50%);
+        }
+        
+        .scale-pan::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #333;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Sun in Capricorn: Complete Guide ♑</h1>
-    <p>The Ambitious, Disciplined, and Responsible Leader of the Zodiac</p>
+    <h1>Sun in Libra: Complete Guide ♎</h1>
+    <p>The Diplomat, Peacemaker, and Aesthetic of the Zodiac</p>
 </header>
 
 <div class="container">
 
     <!-- HERO SECTION -->
-    <div class="box hero-capricorn-sun">
-        <img src="/sun.webp" alt="Sun in Capricorn - Astrological Interpretation" />
-        <h2>The Strategic Mountain Goat</h2>
-        <p>With the Sun in Capricorn, your core identity is shaped by ambition, discipline, and a profound sense of responsibility. You're here to build enduring structures, achieve mastery, and create lasting legacies.</p>
+    <div class="box hero-libra-sun">
+        <img src="/sun.webp" alt="Sun in Libra - Astrological Interpretation" />
+        <h2>The Harmonious Diplomat</h2>
+        <p>With the Sun in Libra, your core identity is shaped by balance, beauty, and the pursuit of harmony. You're here to create peace, appreciate aesthetics, and build equitable relationships.</p>
+    </div>
+
+    <div class="scales-illustration">
+        ♎
     </div>
 
     <!-- PUBLICATION DATE -->
@@ -248,43 +440,52 @@
     <div class="box">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a href="#personality">1. Sun in Capricorn Personality</a></li>
+            <li><a href="#personality">1. Sun in Libra Personality</a></li>
             <li><a href="#strengths">2. Key Strengths</a></li>
             <li><a href="#challenges">3. Challenges & Growth Areas</a></li>
             <li><a href="#career">4. Career & Life Purpose</a></li>
             <li><a href="#love">5. Love & Relationships</a></li>
-            <li><a href="#houses">6. Sun in Capricorn Through the Houses</a></li>
+            <li><a href="#houses">6. Sun in Libra Through the Houses</a></li>
             <li><a href="#aspects">7. Planetary Aspects</a></li>
-            <li><a href="#famous">8. Famous Sun in Capricorn</a></li>
+            <li><a href="#famous">8. Famous Sun in Libra</a></li>
         </ul>
     </div>
 
     <!-- SECTION 1: PERSONALITY -->
-    <div id="personality" class="box content-section">
-        <h2>1. Sun in Capricorn Personality</h2>
+    <div id="personality" class="box content-section aesthetic-bg">
+        <h2>1. Sun in Libra Personality</h2>
         
         <div class="highlight-box">
-            <p><strong>Core Energy:</strong> Sun in Capricorn represents the pure expression of the "I USE" principle. You exist to master, achieve, and create structures that stand the test of time.</p>
+            <p><strong>Core Energy:</strong> Sun in Libra represents the pure expression of the "I BALANCE" principle. You exist to create harmony, appreciate beauty, and establish justice in relationships.</p>
         </div>
         
-        <p>As an Earth sign ruled by Saturn, Capricorn energy is about structure, discipline, and tangible achievement. With your Sun here, you approach life with pragmatism, patience, and a long-term vision that few can match.</p>
+        <p>As an Air sign ruled by Venus, Libra energy is about balance, partnership, and aesthetics. With your Sun here, you approach life with diplomacy, charm, and a deep appreciation for harmony.</p>
+        
+        <div class="balance-indicator"></div>
+        
+        <div class="quote-box">
+            "The Libra doesn't just see two sides to every story—they feel the weight of both equally, constantly seeking the perfect equilibrium between them."
+        </div>
         
         <div class="key-points">
             <div class="key-point">
                 <h4>Element & Ruler</h4>
-                <p><span class="earth-element">🏔️ Earth Element</span><br>
-                <strong>Ruling Planet:</strong> Saturn<br>
-                <strong>Quality:</strong> Cardinal<br>
-                <strong>Symbol:</strong> The Sea Goat</p>
+                <p><span class="air-element">💨 Air Element</span><br>
+                <span class="cardinal-element">Cardinal Quality</span><br>
+                <strong>Ruling Planet:</strong> Venus</p>
             </div>
             <div class="key-point">
                 <h4>Life Lesson</h4>
-                <p>Learning to balance ambition with emotional fulfillment. Achieving success while maintaining personal connections.</p>
+                <p>Learning to make decisions confidently and developing a strong sense of self independent of relationships.</p>
             </div>
             <div class="key-point">
                 <h4>Soul Purpose</h4>
-                <p>To build enduring institutions, master your chosen field, and teach others the value of discipline and responsibility.</p>
+                <p>To create harmony, appreciate and create beauty, establish justice, and build balanced partnerships.</p>
             </div>
+        </div>
+        
+        <div class="planet-badge">
+            <img src="/venus.png" alt="Venus"> Ruled by Venus: Planet of Love & Beauty
         </div>
     </div>
 
@@ -292,7 +493,7 @@
     <div id="strengths" class="box content-section">
         <h2>2. Key Strengths</h2>
         
-        <p>Your Capricorn Sun gives you remarkable strengths that make you a natural leader and builder:</p>
+        <p>Your Libra Sun gives you remarkable strengths that make you a natural peacemaker and aesthetic visionary:</p>
         
         <table class="traits-table">
             <thead>
@@ -304,46 +505,46 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Discipline</strong></td>
-                    <td>Exceptional self-control</td>
-                    <td>Can achieve long-term goals others find impossible</td>
+                    <td><strong>Diplomatic Skill</strong></td>
+                    <td>Natural mediator and peacemaker</td>
+                    <td>Resolves conflicts and creates harmonious environments</td>
                 </tr>
                 <tr>
-                    <td><strong>Responsibility</strong></td>
-                    <td>Reliable and accountable</td>
-                    <td>People trust you with important tasks and leadership</td>
+                    <td><strong>Aesthetic Sense</strong></td>
+                    <td>Eye for beauty and balance</td>
+                    <td>Creates beautiful spaces, art, and experiences</td>
                 </tr>
                 <tr>
-                    <td><strong>Ambition</strong></td>
-                    <td>Driven to achieve</td>
-                    <td>Creates concrete results and lasting success</td>
+                    <td><strong>Fair-mindedness</strong></td>
+                    <td>Seeks justice and equality</td>
+                    <td>Creates equitable systems and relationships</td>
                 </tr>
                 <tr>
-                    <td><strong>Practicality</strong></td>
-                    <td>Grounded in reality</td>
-                    <td>Creates workable, sustainable solutions</td>
+                    <td><strong>Social Grace</strong></td>
+                    <td>Charming and tactful</td>
+                    <td>Builds strong networks and positive relationships</td>
                 </tr>
                 <tr>
-                    <td><strong>Patience</strong></td>
-                    <td>Willing to wait for results</td>
-                    <td>Achieves mastery through sustained effort</td>
+                    <td><strong>Partnership Ability</strong></td>
+                    <td>Excellent at collaboration</td>
+                    <td>Creates synergistic relationships and teams</td>
                 </tr>
                 <tr>
-                    <td><strong>Strategic Thinking</strong></td>
-                    <td>Long-term planning ability</td>
-                    <td>Creates enduring structures and institutions</td>
-                </tr>
-                <tr>
-                    <td><strong>Leadership</strong></td>
-                    <td>Natural authority</td>
-                    <td>Inspires others through competence and reliability</td>
+                    <td><strong>Harmony Creation</strong></td>
+                    <td>Seeks win-win solutions</td>
+                    <td>Transforms discord into cooperation</td>
                 </tr>
             </tbody>
         </table>
         
+        <div class="justice-scale">
+            <div class="scale-pan"></div>
+            <div class="scale-pan"></div>
+        </div>
+        
         <div class="mythology-box">
-            <h3>Mythological Connection: The Sea Goat & Father Time</h3>
-            <p>In mythology, Capricorn is represented by the Sea Goat - a creature that climbs the highest mountains yet swims in the deepest oceans. Connected to Saturn (Chronos), the god of time, you understand that true success requires patience and endurance. Your challenge is to climb your mountain without losing touch with your emotional depths.</p>
+            <h3>Mythological Connection: The Scales of Justice</h3>
+            <p>In mythology, Libra is represented by the Scales of Justice, held by Astraea, the goddess of justice. Like the scales, you constantly weigh options, seek fairness, and try to balance opposing forces. Your challenge is to avoid becoming so focused on balance that you become indecisive, and to learn that sometimes justice requires taking a firm stand.</p>
         </div>
     </div>
 
@@ -351,37 +552,29 @@
     <div id="challenges" class="box content-section">
         <h2>3. Challenges & Growth Areas</h2>
         
-        <p>Every strength has its shadow side. Your Capricorn energy can manifest as challenges when not consciously directed:</p>
+        <p>Every strength has its shadow side. Your Libra energy can manifest as challenges when not consciously directed:</p>
         
         <div class="key-points">
             <div class="key-point">
-                <h4>Workaholism</h4>
-                <p>Can become overly focused on career at the expense of personal life.</p>
+                <h4>Indecisiveness</h4>
+                <p>Seeing all sides can make choosing difficult and time-consuming.</p>
             </div>
             <div class="key-point">
-                <h4>Emotional Restraint</h4>
-                <p>Tendency to suppress emotions in favor of practical concerns.</p>
+                <h4>People-Pleasing</h4>
+                <p>Desire for harmony can lead to sacrificing your own needs.</p>
             </div>
             <div class="key-point">
-                <h4>Pessimism</h4>
-                <p>Saturn's influence can lead to excessive caution or negative thinking.</p>
+                <h4>Avoidance of Conflict</h4>
+                <p>May avoid necessary confrontations to maintain peace.</p>
             </div>
             <div class="key-point">
-                <h4>Rigidity</h4>
-                <p>Can become too attached to traditions and established ways.</p>
-            </div>
-            <div class="key-point">
-                <h4>Status Consciousness</h4>
-                <p>Overemphasis on social position and external validation.</p>
-            </div>
-            <div class="key-point">
-                <h4>Fear of Failure</h4>
-                <p>High standards can create excessive pressure and risk aversion.</p>
+                <h4>Dependency</h4>
+                <p>Can become overly reliant on partnerships for identity.</p>
             </div>
         </div>
         
         <div class="highlight-box">
-            <p><strong>Growth Opportunity:</strong> The spiritual lesson for Sun in Capricorn is to balance achievement with emotional fulfillment, learn to value yourself beyond external success, and allow vulnerability alongside strength.</p>
+            <p><strong>Growth Opportunity:</strong> The spiritual lesson for Sun in Libra is to develop inner confidence, learn to make decisions independently, and understand that true harmony sometimes requires facing discord.</p>
         </div>
     </div>
 
@@ -389,9 +582,9 @@
     <div id="career" class="box content-section">
         <h2>4. Career & Life Purpose</h2>
         
-        <p>Your career should allow you to build something enduring, exercise authority, and achieve measurable success. You thrive in structured environments where competence and reliability are rewarded.</p>
+        <p>Your career should allow you to work with aesthetics, relationships, and fairness. You thrive in environments that value harmony, beauty, and collaboration.</p>
         
-        <h3>Ideal Careers for Sun in Capricorn</h3>
+        <h3>Ideal Careers for Sun in Libra</h3>
         
         <table class="traits-table">
             <thead>
@@ -403,39 +596,34 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Business & Management</strong></td>
-                    <td>Natural leadership and strategic thinking</td>
-                    <td>CEO, executive, business owner, manager</td>
+                    <td><strong>Law & Mediation</strong></td>
+                    <td>Natural sense of justice and fairness</td>
+                    <td>Lawyer, mediator, judge <span class="justice-tag">Justice</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Finance & Banking</strong></td>
-                    <td>Understanding of structure and long-term planning</td>
-                    <td>Investment banker, financial analyst, CFO</td>
+                    <td><strong>Art & Design</strong></td>
+                    <td>Eye for beauty and aesthetics</td>
+                    <td>Interior designer, artist, architect <span class="beauty-badge">Beauty</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Government & Politics</strong></td>
-                    <td>Respect for institutions and authority</td>
-                    <td>Politician, diplomat, policy maker</td>
+                    <td><strong>Diplomacy & HR</strong></td>
+                    <td>Excellent people skills</td>
+                    <td>Diplomat, HR manager, negotiator <span class="diplomacy-badge">Diplomacy</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Law</strong></td>
-                    <td>Appreciation for rules and structure</td>
-                    <td>Judge, attorney, legal consultant</td>
+                    <td><strong>Fashion & Beauty</strong></td>
+                    <td>Venus-ruled appreciation for style</td>
+                    <td>Fashion designer, stylist, makeup artist</td>
                 </tr>
                 <tr>
-                    <td><strong>Engineering & Architecture</strong></td>
-                    <td>Talent for building enduring structures</td>
-                    <td>Civil engineer, architect, project manager</td>
+                    <td><strong>Event Planning</strong></td>
+                    <td>Creates harmonious experiences</td>
+                    <td>Wedding planner, event coordinator</td>
                 </tr>
                 <tr>
-                    <td><strong>Education Administration</strong></td>
-                    <td>Ability to create and maintain systems</td>
-                    <td>School principal, university dean, administrator</td>
-                </tr>
-                <tr>
-                    <td><strong>Healthcare Management</strong></td>
-                    <td>Responsibility and organizational skills</td>
-                    <td>Hospital administrator, clinic director</td>
+                    <td><strong>Counseling</strong></td>
+                    <td>Balances relationship dynamics</td>
+                    <td>Marriage counselor, relationship coach</td>
                 </tr>
             </tbody>
         </table>
@@ -443,11 +631,10 @@
         <h3>Life Purpose</h3>
         <p>Your soul mission is to:</p>
         <ul>
-            <li><strong>Build Enduring Structures:</strong> Create institutions and systems that last</li>
-            <li><strong>Achieve Mastery:</strong> Become an expert in your chosen field</li>
-            <li><strong>Teach Responsibility:</strong> Demonstrate the value of discipline and accountability</li>
-            <li><strong>Provide Stability:</strong> Create security for yourself and those who depend on you</li>
-            <li><strong>Leave a Legacy:</strong> Build something that outlasts your own lifetime</li>
+            <li><strong>Harmonize:</strong> Create balance and peace in relationships and environments</li>
+            <li><strong>Beautify:</strong> Bring aesthetic pleasure and artistic expression to the world</li>
+            <li><strong>Mediate:</strong> Resolve conflicts and find win-win solutions</li>
+            <li><strong>Partner:</strong> Build synergistic relationships and collaborations</li>
         </ul>
     </div>
 
@@ -455,110 +642,108 @@
     <div id="love" class="box content-section">
         <h2>5. Love & Relationships</h2>
         
-        <p>In relationships, Sun in Capricorn brings loyalty, reliability, and a serious commitment to partnership. You're a dependable partner who values stability, tradition, and building a secure future together.</p>
+        <p>In relationships, Sun in Libra brings romance, partnership skills, and a deep need for harmony. You're a devoted partner who values beauty, equality, and mutual respect.</p>
         
         <div class="key-points">
             <div class="key-point">
                 <h4>Relationship Style</h4>
-                <p>Serious, committed, and pragmatic. You build relationships slowly but they're built to last.</p>
+                <p>Romantic, diplomatic, and partnership-oriented. You see relationships as beautiful collaborations.</p>
             </div>
             <div class="key-point">
                 <h4>What You Need</h4>
-                <p>Stability, mutual respect, shared goals, and a partner who understands your ambitions.</p>
+                <p>Harmony, romance, intellectual connection, fairness, and aesthetic compatibility.</p>
             </div>
             <div class="key-point">
                 <h4>Growth Area</h4>
-                <p>Learning to express emotions freely and balance career ambitions with relationship needs.</p>
+                <p>Learning to maintain your identity within partnerships and handle conflict constructively.</p>
             </div>
         </div>
         
         <h3>Best Matches</h3>
         <ul>
-            <li><strong>Sun in Taurus:</strong> Shares your practicality and appreciation for stability</li>
-            <li><strong>Sun in Virgo:</strong> Matches your dedication to service and improvement</li>
-            <li><strong>Sun in Scorpio:</strong> Understands your depth and shares your intensity</li>
-            <li><strong>Sun in Pisces:</strong> Brings emotional depth and spiritual insight to your practicality</li>
-            <li><strong>Sun in Cancer:</strong> Provides emotional security and domestic harmony</li>
+            <li><strong>Sun in Gemini:</strong> Shares your intellectual curiosity and social nature</li>
+            <li><strong>Sun in Aquarius:</strong> Appreciates your fairness and humanitarian ideals</li>
+            <li><strong>Sun in Leo:</strong> Balances your diplomacy with passion and creativity</li>
+            <li><strong>Sun in Sagittarius:</strong> Shares your love of beauty, culture, and philosophy</li>
         </ul>
         
         <h3>Relationship Challenges</h3>
         <p>You may struggle with:</p>
         <ul>
-            <li><strong>Emotional Restraint:</strong> Difficulty expressing feelings openly</li>
-            <li><strong>Work-Life Balance:</strong> Prioritizing career over relationship time</li>
-            <li><strong>Traditionalism:</strong> Rigid views about relationship roles</li>
-            <li><strong>Pragmatism Over Romance:</strong> Focusing on practical matters at the expense of romance</li>
-            <li><strong>High Standards:</strong> Unrealistic expectations for partners</li>
+            <li><strong>Codependency:</strong> Losing yourself in relationships</li>
+            <li><strong>Avoidance:</strong> Sidestepping necessary conflicts</li>
+            <li><strong>Indecision:</strong> Difficulty making relationship choices</li>
+            <li><strong>Idealization:</strong> Expecting perfect harmony always</li>
         </ul>
         
-        <p><a href="/signs/compatibility/capricorn.html">→ Explore detailed Capricorn compatibility</a></p>
+        <p><a href="/signs/compatibility/libra.html">→ Explore detailed Libra compatibility</a></p>
     </div>
 
     <!-- SECTION 6: HOUSES -->
     <div id="houses" class="box content-section">
-        <h2>6. Sun in Capricorn Through the Houses</h2>
+        <h2>6. Sun in Libra Through the Houses</h2>
         
-        <p>The house placement of your Sun in Capricorn shows where in your life you express this ambitious, disciplined energy most strongly:</p>
+        <p>The house placement of your Sun in Libra shows where in your life you express this harmonious, diplomatic energy most strongly:</p>
         
         <div class="houses-grid">
             <div class="house-card">
-                <h4>Sun in Capricorn - 1st House</h4>
-                <p>Serious, responsible identity. Natural authority and mature presence.</p>
+                <h4>Sun in Libra - 1st House</h4>
+                <p>Charming, diplomatic identity. Projects harmony and aesthetic appeal.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 2nd House</h4>
-                <p>Practical approach to resources. Builds financial security through discipline.</p>
+                <h4>Sun in Libra - 2nd House</h4>
+                <p>Values beauty and balance in finances. May earn through art or partnerships.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 3rd House</h4>
-                <p>Serious communication style. Practical learning and reliable information sharing.</p>
+                <h4>Sun in Libra - 3rd House</h4>
+                <p>Diplomatic communication style. Harmonious relationships with siblings.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 4th House</h4>
-                <p>Builds stable family foundations. Takes responsibility for home and roots.</p>
+                <h4>Sun in Libra - 4th House</h4>
+                <p>Beautiful, harmonious home. Family values peace and aesthetics.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 5th House</h4>
-                <p>Disciplined creativity. Responsible approach to romance and children.</p>
+                <h4>Sun in Libra - 5th House</h4>
+                <p>Romantic creativity. Artistic self-expression and harmonious romance.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 6th House</h4>
-                <p>Exceptional work ethic. Creates efficient systems and reliable routines.</p>
+                <h4>Sun in Libra - 6th House</h4>
+                <p>Harmonious work environment. Diplomatic approach to service and health.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 7th House</h4>
-                <p>Seeks serious, stable partnerships. Values commitment and reliability in relationships.</p>
+                <h4>Sun in Libra - 7th House</h4>
+                <p>Natural placement! Strong focus on partnerships and one-on-one relationships.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 8th House</h4>
-                <p>Strategic with shared resources. Builds security through partnerships.</p>
+                <h4>Sun in Libra - 8th House</h4>
+                <p>Balanced approach to shared resources. Harmonious intimate relationships.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 9th House</h4>
-                <p>Practical philosophy. Traditional values combined with worldly wisdom.</p>
+                <h4>Sun in Libra - 9th House</h4>
+                <p>Philosophy of harmony. Appreciation for beauty in different cultures.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 10th House</h4>
-                <p>Natural career success. Ambitious drive for public recognition and authority.</p>
+                <h4>Sun in Libra - 10th House</h4>
+                <p>Career in diplomacy, law, or arts. Public reputation for fairness and charm.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 11th House</h4>
-                <p>Builds influential networks. Achieves goals through strategic alliances.</p>
+                <h4>Sun in Libra - 11th House</h4>
+                <p>Diplomatic friendships. Social causes focused on justice and harmony.</p>
             </div>
             <div class="house-card">
-                <h4>Sun in Capricorn - 12th House</h4>
-                <p>Private ambition. Spiritual discipline and inner authority.</p>
+                <h4>Sun in Libra - 12th House</h4>
+                <p>Private appreciation for beauty. Spiritual search for inner balance.</p>
             </div>
         </div>
         
-        <p><a href="/sun/capricorn-1st-house.html">→ Explore detailed house interpretations for Sun in Capricorn</a></p>
+        <p><a href="/sun/libra-7th-house.html">→ Explore detailed house interpretations for Sun in Libra</a></p>
     </div>
 
     <!-- SECTION 7: ASPECTS -->
     <div id="aspects" class="box content-section">
-        <h2>7. Planetary Aspects to Sun in Capricorn</h2>
+        <h2>7. Planetary Aspects to Sun in Libra</h2>
         
-        <p>Other planets aspecting your Sun modify how you express your Capricorn energy:</p>
+        <p>Other planets aspecting your Sun modify how you express your Libra energy:</p>
         
         <table class="traits-table">
             <thead>
@@ -571,48 +756,38 @@
             <tbody>
                 <tr>
                     <td><strong>Moon conjunct Sun</strong></td>
-                    <td>Emotional discipline</td>
-                    <td>Balances feelings with practicality</td>
+                    <td>Emotional diplomacy</td>
+                    <td>Feelings are balanced and relationship-oriented</td>
                 </tr>
                 <tr>
                     <td><strong>Mercury conjunct Sun</strong></td>
-                    <td>Strategic thinker</td>
-                    <td>Practical communication, careful planning</td>
+                    <td>Diplomatic communicator</td>
+                    <td>Charming speech and balanced thinking</td>
                 </tr>
                 <tr>
                     <td><strong>Venus conjunct Sun</strong></td>
-                    <td>Ambitious charmer</td>
-                    <td>Combines social grace with career drive</td>
+                    <td>Double Venus energy</td>
+                    <td>Extreme aesthetic sense and relationship focus</td>
                 </tr>
                 <tr>
                     <td><strong>Mars conjunct Sun</strong></td>
-                    <td>Determined achiever</td>
-                    <td>Powerful drive toward goals, competitive spirit</td>
+                    <td>Balanced action</td>
+                    <td>Assertive yet diplomatic approach to goals</td>
                 </tr>
                 <tr>
                     <td><strong>Jupiter conjunct Sun</strong></td>
-                    <td>Expansive ambition</td>
-                    <td>Broad vision, success through optimism</td>
+                    <td>Expansive harmony</td>
+                    <td>Social grace and generous partnership style</td>
                 </tr>
                 <tr>
                     <td><strong>Saturn conjunct Sun</strong></td>
-                    <td>Ultimate disciplinarian</td>
-                    <td>Strong sense of duty, mastery through challenges</td>
+                    <td>Structured balance</td>
+                    <td>Serious approach to relationships and fairness</td>
                 </tr>
                 <tr>
                     <td><strong>Uranus conjunct Sun</strong></td>
-                    <td>Innovative traditionalist</td>
-                    <td>Modern approaches to established structures</td>
-                </tr>
-                <tr>
-                    <td><strong>Neptune conjunct Sun</strong></td>
-                    <td>Visionary leader</td>
-                    <td>Spiritual ambition, creative structures</td>
-                </tr>
-                <tr>
-                    <td><strong>Pluto conjunct Sun</strong></td>
-                    <td>Transformational authority</td>
-                    <td>Power to rebuild institutions from the ground up</td>
+                    <td>Revolutionary fairness</td>
+                    <td>Unconventional approach to harmony and justice</td>
                 </tr>
             </tbody>
         </table>
@@ -620,64 +795,45 @@
 
     <!-- SECTION 8: FAMOUS -->
     <div id="famous" class="box content-section">
-        <h2>8. Famous Sun in Capricorn</h2>
+        <h2>8. Famous Sun in Libra</h2>
         
-        <p>These individuals exemplify the Sun in Capricorn energy of discipline, ambition, and enduring success:</p>
+        <p>These individuals exemplify the Sun in Libra energy of diplomacy, aesthetics, and harmonious relationships:</p>
         
         <div class="key-points">
             <div class="key-point">
-                <h4>Michelle Obama</h4>
-                <p>Born January 17 - Disciplined, principled leader and author.</p>
+                <h4>Mahatma Gandhi</h4>
+                <p>Born October 2 - Master of peaceful protest and harmony between cultures.</p>
             </div>
             <div class="key-point">
-                <h4>Denzel Washington</h4>
-                <p>Born December 28 - Master actor known for disciplined craft and enduring career.</p>
+                <h4>Serena Williams</h4>
+                <p>Born September 26 - Athletic champion with grace, style, and advocacy for equality.</p>
             </div>
             <div class="key-point">
-                <h4>Bradley Cooper</h4>
-                <p>Born January 5 - Actor and director known for serious dedication to his craft.</p>
+                <h4>John Lennon</h4>
+                <p>Born October 9 - Musical peacemaker and advocate for harmony and love.</p>
             </div>
             <div class="key-point">
-                <h4>Kate Middleton</h4>
-                <p>Born January 9 - Dutiful royal who mastered her role with grace and discipline.</p>
-            </div>
-            <div class="key-point">
-                <h4>Elvis Presley</h4>
-                <p>Born January 8 - The King who built an enduring musical legacy.</p>
-            </div>
-            <div class="key-point">
-                <h4>Zooey Deschanel</h4>
-                <p>Born January 17 - Creative artist with disciplined approach to her craft.</p>
+                <h4>Kim Kardashian</h4>
+                <p>Born October 21 - Fashion and beauty icon with strong partnership focus.</p>
             </div>
         </div>
         
-        <h3>Historical Figures & Icons</h3>
+        <h3>Diplomats and Artists</h3>
         <ul>
-            <li><strong>Isaac Newton</strong> (January 4) - Disciplined scientist who established laws of physics</li>
-            <li><strong>Martin Luther King Jr.</strong> (January 15) - Strategic leader of the civil rights movement</li>
-            <li><strong>Stephen Hawking</strong> (January 8) - Brilliant physicist who mastered his field despite challenges</li>
-            <li><strong>J.R.R. Tolkien</strong> (January 3) - Author who built enduring fantasy worlds</li>
-            <li><strong>Simone de Beauvoir</strong> (January 9) - Disciplined philosopher and writer</li>
-            <li><strong>David Bowie</strong> (January 8) - Master of reinvention with disciplined artistry</li>
-            <li><strong>Muhammad Ali</strong> (January 17) - Disciplined athlete who mastered his craft</li>
-            <li><strong>Edgar Allan Poe</strong> (January 19) - Master of Gothic literature with disciplined craft</li>
-            <li><strong>Joan of Arc</strong> (January 6) - Disciplined visionary who changed history</li>
-            <li><strong>Alexander Hamilton</strong> (January 11) - Architect of American financial systems</li>
+            <li><strong>Jimmy Carter</strong> (October 1) - Diplomat and humanitarian peacemaker</li>
+            <li><strong>Gwyneth Paltrow</strong> (September 27) - Style icon and lifestyle curator</li>
+            <li><strong>Matt Damon</strong> (October 8) - Actor known for balanced performances</li>
+            <li><strong>Kate Winslet</strong> (October 5) - Actress with graceful presence and talent</li>
         </ul>
         
-        <h3>Modern Achievers</h3>
-        <ul>
-            <li><strong>LeBron James</strong> (December 30) - Disciplined athlete with enduring career</li>
-            <li><strong>Tiger Woods</strong> (December 30) - Master golfer known for discipline and focus</li>
-            <li><strong>Lin-Manuel Miranda</strong> (January 16) - Disciplined creator of groundbreaking musicals</li>
-            <li><strong>Dolly Parton</strong> (January 19) - Strategic businesswoman and enduring entertainer</li>
-            <li><strong>Betty White</strong> (January 17) - Enduring entertainer with disciplined career</li>
-        </ul>
+        <div class="highlight-box">
+            <p><strong>Note:</strong> Many great peacemakers, artists, and diplomats have strong Libra placements. Your Sun sign gives you the natural ability to see all sides, create beauty, and build harmonious relationships.</p>
+        </div>
     </div>
 
     <!-- CTA SECTION -->
     <div class="box cta-box">
-        <img src="/Astrologer_Guide.webp" alt="Sun in Capricorn - Free Astrology Guide" />
+        <img src="/Astrologer_Guide.webp" alt="Sun in Libra - Free Astrology Guide" />
         <h2>Master Your Birth Chart Interpretation</h2>
         <p>
             <strong>Download your free copy of 'The Astrologer's Guide: Mastering Birth Chart Interpretation'</strong>
@@ -689,7 +845,6 @@
             <li>Planetary aspect interpretations</li>
             <li>Transit timing for personal growth</li>
             <li>Practical chart reading exercises</li>
-            <li>Special section on Earth signs and career mastery</li>
         </ul>
         <p class="cta-button">
             <a href="https://hermesastrology.substack.com/p/your-free-book" target="_blank">
@@ -732,9 +887,9 @@
 
     <!-- NAVIGATION -->
     <div class="navigation-links">
-        <a href="/sun/sagittarius.html" class="nav-link">← Sun in Sagittarius</a>
+        <a href="/sun/virgo.html" class="nav-link">← Sun in Virgo</a>
         <a href="/sun/index.html" class="nav-link">All Sun Signs</a>
-        <a href="/sun/aquarius.html" class="nav-link">Sun in Aquarius →</a>
+        <a href="/sun/scorpio.html" class="nav-link">Sun in Scorpio →</a>
     </div>
 
 </div><!-- end container -->
