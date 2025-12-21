@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home & Core Pages -->
     <url><loc>https://planet-astro.com/</loc></url>
     <url><loc>https://planet-astro.com/sun-in-astrology.html</loc></url>
     <url><loc>https://planet-astro.com/sun/index.html</loc></url>
-    <url><loc>https://planet-astro.com/sun/aries.html</loc></url>
     <url><loc>https://planet-astro.com/signs/index.html</loc></url>
-    <url><loc>https://planet-astro.com/signs/aries.html</loc></url>
     <url><loc>https://planet-astro.com/houses/index.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/1st-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/2nd-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/3rd-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/4th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/5th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/6th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/7th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/8th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/9th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/10th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/11th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/houses/12th-house.html</loc></url>
+    
+    <!-- Aries -->
+    <url><loc>https://planet-astro.com/signs/aries.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/aries.html</loc></url>
     <url><loc>https://planet-astro.com/sun/aries-1st-house.html</loc></url>
     <url><loc>https://planet-astro.com/sun/aries-2nd-house.html</loc></url>
     <url><loc>https://planet-astro.com/sun/aries-3rd-house.html</loc></url>
@@ -31,65 +22,89 @@
     <url><loc>https://planet-astro.com/sun/aries-10th-house.html</loc></url>
     <url><loc>https://planet-astro.com/sun/aries-11th-house.html</loc></url>
     <url><loc>https://planet-astro.com/sun/aries-12th-house.html</loc></url>
+    
+    <!-- Taurus -->
     <url><loc>https://planet-astro.com/signs/taurus.html</loc></url>
     <url><loc>https://planet-astro.com/sun/taurus.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-1st-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-2nd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-3rd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-4th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-5th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-6th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-7th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-8th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-9th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-10th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-11th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/taurus-12th-house.html</loc></url>
-<url><loc>https://planet-astro.com/signs/gemini.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-1st-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-2nd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-3rd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-4th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-5th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-6th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-7th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-8th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-9th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-10th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-11th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/gemini-12th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-1st-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-2nd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-3rd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-4th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-5th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-6th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-7th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-8th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-9th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-10th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-11th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/taurus-12th-house.html</loc></url>
+    
+    <!-- Gemini -->
+    <url><loc>https://planet-astro.com/signs/gemini.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-1st-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-2nd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-3rd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-4th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-5th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-6th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-7th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-8th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-9th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-10th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-11th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/gemini-12th-house.html</loc></url>
+    
+    <!-- Cancer -->
     <url><loc>https://planet-astro.com/signs/cancer.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-1st-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-2nd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-3rd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-4th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-5th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-6th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-7th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-8th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-9th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-10th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-11th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/cancer-12th-house.html</loc></url>
-<url><loc>https://planet-astro.com/signs/leo.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-1st-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-2nd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-3rd-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-4th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-5th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-6th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-7th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-8th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-9th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-10th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-11th-house.html</loc></url>
-<url><loc>https://planet-astro.com/sun/leo-12th-house.html</loc></url>
-    <url><loc>https://planet-astro.com/cookies.html</loc></url>
-    <url><loc>https://planet-astro.com/terms.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-1st-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-2nd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-3rd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-4th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-5th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-6th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-7th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-8th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-9th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-10th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-11th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/cancer-12th-house.html</loc></url>
+    
+    <!-- Leo -->
+    <url><loc>https://planet-astro.com/signs/leo.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-1st-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-2nd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-3rd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-4th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-5th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-6th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-7th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-8th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-9th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-10th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-11th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/sun/leo-12th-house.html</loc></url>
+    
+    <!-- Houses Pages -->
+    <url><loc>https://planet-astro.com/houses/1st-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/2nd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/3rd-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/4th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/5th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/6th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/7th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/8th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/9th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/10th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/11th-house.html</loc></url>
+    <url><loc>https://planet-astro.com/houses/12th-house.html</loc></url>
+    
+    <!-- Legal & Info Pages -->
     <url><loc>https://planet-astro.com/about.html</loc></url>
-    <url><loc>https://planet-astro.com/privacy.html</loc></url>
     <url><loc>https://planet-astro.com/contact.html</loc></url>
+    <url><loc>https://planet-astro.com/privacy.html</loc></url>
+    <url><loc>https://planet-astro.com/terms.html</loc></url>
+    <url><loc>https://planet-astro.com/cookies.html</loc></url>
 </urlset>
