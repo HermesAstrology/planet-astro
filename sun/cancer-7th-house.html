@@ -350,6 +350,44 @@
             font-weight: bold;
         }
         
+        /* Added Author Profile Section */
+        .author-profile {
+            margin: 80px 0 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, #F9FAFF 0%, #F5F7FF 100%);
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            border-top: 3px solid var(--sea-foam);
+            border-bottom: 3px solid var(--sea-foam);
+            border-radius: 12px;
+        }
+        
+        .author-profile img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid var(--deep-tide);
+            flex-shrink: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .author-profile p {
+            margin-bottom: 1rem;
+        }
+        
+        .author-profile a {
+            color: var(--deep-tide);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--sea-foam);
+            transition: all 0.2s;
+        }
+        
+        .author-profile a:hover {
+            color: var(--crab-shell);
+            border-bottom-style: solid;
+        }
+        
         footer {
             margin-top: 80px;
             padding-top: 30px;
@@ -358,6 +396,42 @@
             font-size: 0.9rem;
             color: var(--crab-shell);
             opacity: 0.8;
+        }
+        
+        /* Added Footer Links */
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: var(--deep-tide);
+            text-decoration: none;
+            transition: all 0.2s;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .footer-links a::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--sea-foam);
+            transition: width 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--crab-shell);
+        }
+        
+        .footer-links a:hover::after {
+            width: 100%;
         }
         
         @media (max-width: 768px) {
@@ -392,6 +466,20 @@
                 padding: 25px 25px 25px 45px;
                 font-size: 1.05rem;
             }
+            
+            /* Responsive Author Profile */
+            .author-profile {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+                gap: 25px;
+            }
+            
+            .footer-links {
+                gap: 15px;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -406,6 +494,15 @@
             .editorial-quote::before {
                 left: 15px;
                 font-size: 3rem;
+            }
+            
+            .author-profile {
+                padding: 25px 20px;
+            }
+            
+            .author-profile img {
+                width: 90px;
+                height: 90px;
             }
         }
     </style>
@@ -496,9 +593,30 @@
         <p>Ultimately, Sun in Cancer in the 7th House offers a beautiful, if complex, gift: the understanding that we are relational beings at our core. Your path is to honor the depth of your emotional investments while cultivating a self that is complete enough to share, not half-searching for completion. Your partnerships are meant to be your greatest teachers, reflecting back not only your capacity for profound care but also the places where you must learn to care for yourself.</p>
 
         <p>In a world that often prizes independence above intimacy, your chart reminds us that there is sacred strength in interdependence—in building bonds that are both a shelter and a mirror, a place where the tender heart of Cancer can feel safe enough to fully shine.</p>
+
+        <!-- Added Author Profile Section -->
+        <div class="author-profile">
+            <img src="/logo_hermes.webp" alt="Hermes Astrology">
+            <div>
+                <p><strong>About Hermes Astrology</strong><br>
+                <strong>Guiding Souls Through Relational Patterns</strong><br>
+                📧 10,000+ Substack Subscribers: <a href="https://hermesastrology.substack.com">https://hermesastrology.substack.com</a><br>
+                ✍️ 5,000+ Medium Followers: @HermesAstrology</p>
+                <p style="margin-top: 15px; font-style: italic; color: var(--deep-tide);">"Understanding the astrology of relationships isn't about predicting partners—it's about understanding the relational patterns we carry and the intimacy we're here to learn."</p>
+                <p>With a focus on the intersection of astrology and relationship dynamics, Hermes Astrology has helped thousands understand their patterns of connection, intimacy needs, and the soul lessons hidden within their partnerships.</p>
+            </div>
+        </div>
     </main>
 
     <footer>
+        <div class="footer-links">
+            <a href="/">Home</a> | 
+            <a href="/privacy.html">Privacy</a> | 
+            <a href="/cookies.html">Cookies</a> | 
+            <a href="/terms.html">Terms of Service</a> | 
+            <a href="/about.html">About</a> | 
+            <a href="/contact.html">Contact</a>
+        </div>
         <p>© 2025 Planet-Astro.com — Published December 21, 2025</p>
         <p style="font-size: 0.85rem; margin-top: 8px;">Part of the Hermes Astrology collection.</p>
     </footer>
