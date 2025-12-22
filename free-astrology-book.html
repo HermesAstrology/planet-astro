@@ -2,174 +2,709 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <title>Free Astrology Book – The Astrologer’s Guide to Birth Chart Interpretation</title>
-
-    <meta name="description" content="Access a free 500-page astrology ebook by Hermes Astrology. Learn how to interpret birth charts, planets, signs, houses, and real-life case studies.">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Favicon -->
-    <link rel="icon" href="/planets.ico">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/style.css">
-
-    <!-- Schema: Educational Resource (unique, not reused elsewhere) -->
+    <title>Free Astrology Book – The Astrologer's Guide to Birth Chart Interpretation</title>
+    <meta name="description" content="Access a free 500-page astrology ebook by Hermes Astrology. Learn how to interpret birth charts, planets, signs, houses, and real-life case studies.">
+    <link rel="icon" href="/planets.ico" type="image/x-icon">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Book",
       "name": "The Astrologer's Guide: Mastering Birth Chart Interpretation",
+      "description": "A comprehensive 500-page guide to natal astrology and birth chart interpretation",
       "author": {
         "@type": "Person",
-        "name": "Hermes Astrology"
+        "name": "Hermes Astrology",
+        "url": "https://hermesastrology.substack.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Planet-Astro.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://planet-astro.com/logo_hermes.webp"
+        }
       },
       "bookFormat": "EBook",
       "numberOfPages": "500",
+      "datePublished": "2025-12-21",
       "offers": {
         "@type": "Offer",
         "price": "0.00",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://planet-astro.com/free-astrology-book.html"
       }
     }
     </script>
+    
+    <style>
+        :root {
+            --book-gold: #FFD166;
+            --parchment: #FEFAE0;
+            --ink-blue: #283845;
+            --accent-crimson: #D90429;
+            --paper-tan: #E9EDC9;
+            --library-sage: #606C38;
+        }
+        
+        body {
+            font-family: 'Crimson Text', 'Georgia', serif;
+            line-height: 1.75;
+            color: var(--ink-blue);
+            background: var(--parchment);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 45px 80px;
+            position: relative;
+            background-image: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 29px,
+                    rgba(255, 209, 102, 0.05) 29px,
+                    rgba(255, 209, 102, 0.05) 30px
+                );
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(
+                90deg,
+                var(--library-sage),
+                var(--book-gold),
+                var(--accent-crimson),
+                var(--library-sage)
+            );
+            z-index: 1000;
+        }
+        
+        .tome-header {
+            margin-bottom: 70px;
+            text-align: center;
+            position: relative;
+            padding-top: 30px;
+        }
+        
+        .tome-header::before {
+            content: "📚";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5rem;
+            opacity: 0.6;
+        }
+        
+        .book-display {
+            position: relative;
+            height: 280px;
+            margin: 60px 0 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+        
+        .book-shadow {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            filter: blur(10px);
+        }
+        
+        .book-display img {
+            width: 220px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .book-display:hover img {
+            transform: translateY(-20px) rotateY(10deg) scale(1.05);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+        }
+        
+        h1 {
+            color: var(--accent-crimson);
+            font-size: 2.7rem;
+            font-weight: 800;
+            margin: 0 0 25px 0;
+            letter-spacing: -0.5px;
+            position: relative;
+            display: inline-block;
+            padding: 0 50px;
+        }
+        
+        h1::before,
+        h1::after {
+            content: "«";
+            position: absolute;
+            color: var(--book-gold);
+            font-size: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.6;
+        }
+        
+        h1::before {
+            left: 0;
+        }
+        
+        h1::after {
+            right: 0;
+            transform: translateY(-50%) scaleX(-1);
+        }
+        
+        .wisdom-subtitle {
+            color: var(--ink-blue);
+            font-size: 1.4rem;
+            line-height: 1.7;
+            margin: 35px auto 55px;
+            max-width: 780px;
+            font-weight: 400;
+            text-align: center;
+            padding: 25px;
+            background: rgba(255, 209, 102, 0.1);
+            border-radius: 12px;
+            border-top: 2px solid var(--book-gold);
+            border-bottom: 2px solid var(--book-gold);
+        }
+        
+        h2 {
+            color: var(--library-sage);
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 80px 0 45px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        h2::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--book-gold);
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: var(--ink-blue);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 55px 0 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--book-gold);
+            position: relative;
+        }
+        
+        h3::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background: var(--accent-crimson);
+        }
+        
+        .opening-manuscript {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: var(--ink-blue);
+            margin: 50px 0 65px;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 209, 102, 0.5);
+            box-shadow: 0 15px 40px rgba(255, 209, 102, 0.1);
+            position: relative;
+        }
+        
+        .opening-manuscript::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--library-sage), var(--book-gold), var(--accent-crimson));
+        }
+        
+        .book-insight {
+            background: linear-gradient(135deg, #FFF9C4, #FFECB3);
+            padding: 35px 40px;
+            margin: 55px 0;
+            border-radius: 12px;
+            position: relative;
+            border: 2px solid rgba(255, 209, 102, 0.4);
+            box-shadow: inset 0 0 40px rgba(255, 209, 102, 0.1);
+        }
+        
+        .book-insight::before {
+            content: "💎";
+            position: absolute;
+            top: -18px;
+            left: 30px;
+            background: var(--parchment);
+            padding: 0 10px;
+            font-size: 1.5rem;
+        }
+        
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 70px 0;
+        }
+        
+        .learning-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid #FFECB3;
+            position: relative;
+            transition: all 0.4s;
+        }
+        
+        .learning-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--book-gold);
+            box-shadow: 0 20px 50px rgba(255, 209, 102, 0.2);
+        }
+        
+        .learning-card::before {
+            content: "✓";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            background: var(--library-sage);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .wisdom-quote {
+            font-size: 1.45rem;
+            line-height: 1.9;
+            color: var(--library-sage);
+            text-align: center;
+            margin: 85px auto;
+            padding: 55px;
+            max-width: 850px;
+            position: relative;
+            font-style: italic;
+            font-weight: 400;
+            background: white;
+            border-radius: 20px;
+            border: 3px solid var(--book-gold);
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255, 209, 102, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(96, 108, 56, 0.05) 0%, transparent 50%);
+        }
+        
+        .wisdom-quote::before,
+        .wisdom-quote::after {
+            content: "❝";
+            position: absolute;
+            color: var(--book-gold);
+            font-size: 4rem;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .wisdom-quote::before {
+            top: 20px;
+            left: 30px;
+        }
+        
+        .wisdom-quote::after {
+            bottom: 20px;
+            right: 30px;
+            transform: rotate(180deg);
+        }
+        
+        .readers-section {
+            background: #F5F5F5;
+            padding: 45px;
+            margin: 75px 0;
+            border-radius: 15px;
+            border-left: 6px solid var(--library-sage);
+            position: relative;
+        }
+        
+        .readers-section h3 {
+            color: var(--library-sage);
+        }
+        
+        .mastery-cta {
+            background: white;
+            padding: 55px;
+            margin: 100px 0;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 55px;
+            border: 3px solid var(--book-gold);
+            box-shadow: 0 25px 60px rgba(255, 209, 102, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mastery-cta::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(255, 209, 102, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(96, 108, 56, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        
+        .cta-guide img {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+            border: 4px solid var(--library-sage);
+            box-shadow: 0 20px 50px rgba(96, 108, 56, 0.2);
+            transition: transform 0.6s;
+        }
+        
+        .cta-guide:hover img {
+            transform: scale(1.05) rotate(-2deg);
+        }
+        
+        .cta-knowledge h3 {
+            color: var(--accent-crimson);
+            margin-top: 0;
+            font-size: 1.8rem;
+            border: none;
+            padding: 0;
+        }
+        
+        .cta-knowledge h3::after {
+            display: none;
+        }
+        
+        .knowledge-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-crimson), #B71C1C);
+            color: white;
+            padding: 16px 45px;
+            text-decoration: none;
+            border: 2px solid var(--book-gold);
+            margin-top: 30px;
+            font-size: 1.15rem;
+            border-radius: 10px;
+            transition: all 0.5s;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .knowledge-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.7s;
+        }
+        
+        .knowledge-btn:hover::before {
+            left: 100%;
+        }
+        
+        .knowledge-btn:hover {
+            background: linear-gradient(135deg, var(--book-gold), #FFB74D);
+            color: var(--ink-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 209, 102, 0.4);
+        }
+        
+        .author-profile {
+            margin: 110px 0 85px;
+            padding: 55px;
+            background: linear-gradient(135deg, #FFF8E1, #FFECB3);
+            border-radius: 25px;
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 50px;
+            align-items: start;
+            border: 3px solid var(--book-gold);
+            position: relative;
+        }
+        
+        .author-profile::before {
+            content: "🖋️";
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            font-size: 2.5rem;
+            opacity: 0.2;
+        }
+        
+        .author-profile img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-crimson);
+            box-shadow: 0 0 35px rgba(217, 4, 41, 0.3);
+        }
+        
+        footer {
+            margin-top: 100px;
+            padding-top: 45px;
+            border-top: 3px solid var(--book-gold);
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--ink-blue);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            margin-bottom: 35px;
+        }
+        
+        .footer-links a {
+            color: var(--library-sage);
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            padding: 5px 10px;
+            font-weight: 600;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-crimson);
+            background: rgba(255, 209, 102, 0.1);
+            border-radius: 5px;
+        }
+        
+        .footer-links a::before {
+            content: "→";
+            position: absolute;
+            left: -15px;
+            opacity: 0;
+            transition: all 0.3s;
+            color: var(--book-gold);
+        }
+        
+        .footer-links a:hover::before {
+            opacity: 1;
+            left: -10px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 30px;
+                background-image: none;
+            }
+            
+            .book-display {
+                height: 240px;
+            }
+            
+            .book-display img {
+                width: 180px;
+            }
+            
+            .mastery-cta {
+                flex-direction: column;
+                text-align: center;
+                gap: 45px;
+            }
+            
+            .cta-guide {
+                order: -1;
+            }
+            
+            .author-profile {
+                grid-template-columns: 1fr;
+                text-align: center;
+                justify-items: center;
+            }
+            
+            .learning-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.3rem;
+                padding: 0 40px;
+            }
+            
+            .wisdom-subtitle {
+                font-size: 1.2rem;
+                padding: 20px;
+            }
+            
+            .footer-links {
+                gap: 20px;
+            }
+            
+            .footer-links a::before {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-<header class="page-header">
-    <h1>Free Astrology Book</h1>
-    <p class="subtitle">A complete guide to understanding birth charts, planets, signs, and houses</p>
-</header>
-
-<main class="container">
-
-    <!-- BOOK IMAGE -->
-    <div class="image-box">
-        <img src="/Astrologer_Guide.webp" alt="The Astrologer's Guide: Mastering Birth Chart Interpretation ebook cover">
+    <div class="tome-header">
+        <h1>Free Astrology Book</h1>
+        <div class="wisdom-subtitle">A comprehensive 500-page guide to understanding birth charts, planets, signs, houses, and the art of astrological synthesis</div>
     </div>
 
-    <!-- INTRO -->
-    <section class="content-section">
-        <p>
-            <strong>The Astrologer's Guide: Mastering Birth Chart Interpretation</strong>
-            is a comprehensive 500-page ebook written by Hermes Astrology, designed to help readers
-            understand astrology as a coherent system rather than a collection of isolated symbols.
-        </p>
-
-        <p>
-            Normally priced at <strong>$8.99</strong>, this guide is currently available
-            <strong>free</strong> for readers who wish to deepen their understanding of natal astrology,
-            planetary symbolism, and chart synthesis.
-        </p>
-    </section>
-
-    <!-- CONTENT -->
-    <section class="content-section">
-        <h2>What This Book Teaches</h2>
-
-        <p>
-            This guide walks the reader through the structure of the birth chart step by step,
-            beginning with the foundations of astrology and moving toward advanced interpretive
-            techniques used by professional practitioners.
-        </p>
-
-        <ul>
-            <li>Clear explanations of planets, zodiac signs, houses, and aspects</li>
-            <li>How to synthesize placements instead of reading them in isolation</li>
-            <li>Methods for identifying dominant themes in a natal chart</li>
-            <li>Real-life case studies demonstrating practical interpretation</li>
-            <li>A balanced approach combining traditional and modern astrology</li>
-        </ul>
-
-        <p>
-            The emphasis throughout the book is on understanding *why* symbols work together,
-            not memorizing keyword lists. This makes the material suitable for both beginners
-            and experienced astrologers refining their interpretive skills.
-        </p>
-    </section>
-
-    <!-- WHO IT IS FOR -->
-    <section class="content-section">
-        <h2>Who This Book Is For</h2>
-
-        <p>
-            This ebook is written for:
-        </p>
-
-        <ul>
-            <li>Readers learning astrology seriously for the first time</li>
-            <li>Astrology enthusiasts who want structured knowledge</li>
-            <li>Practitioners seeking deeper chart synthesis skills</li>
-            <li>Anyone interested in understanding their natal chart beyond horoscopes</li>
-        </ul>
-
-        <p>
-            No prior expertise is required, but the depth of material allows the book to grow
-            with the reader over time.
-        </p>
-    </section>
-
-    <!-- CTA (single external link, contextual) -->
-    <section class="cta-box">
-        <p>
-            If you would like to access the complete 500-page PDF edition of
-            <em>The Astrologer's Guide: Mastering Birth Chart Interpretation</em>,
-            you can receive it at no cost by joining Hermes Astrology’s publication.
-        </p>
-
-        <p>
-            <a class="cta-link" href="https://hermesastrology.substack.com/p/your-free-book" target="_blank">
-                Access the free astrology book
-            </a>
-        </p>
-    </section>
-
-    <!-- AUTHOR BOX -->
-    <section class="author-box">
-        <img src="/logo_hermes.webp" alt="Hermes Astrology logo">
-
-        <div>
-            <h3>About Hermes Astrology</h3>
-            <p><strong>Trusted Astrology Expert with 15,000+ Followers</strong></p>
-
-            <p>
-                📧 10,000+ Substack Subscribers:  
-                <a href="https://hermesastrology.substack.com">hermesastrology.substack.com</a>
-            </p>
-
-            <p>
-                ✍️ 5,000+ Medium Followers: @HermesAstrology on Medium
-            </p>
-
-            <p>
-                <em>"Decode Your Lifepath, Empower Your Present, and Light the Way for Others."</em>
-            </p>
-
-            <p>
-                Hermes Astrology brings ancient astrological wisdom to the modern seeker,
-                combining traditional techniques with contemporary psychological insight.
-                With a global community of over 15,000 followers, Hermes provides accurate,
-                transformative guidance for understanding the deeper structure of the birth chart.
-            </p>
+    <main>
+        <div class="book-display">
+            <div class="book-shadow"></div>
+            <img src="/Astrologer_Guide.webp" alt="The Astrologer's Guide: Mastering Birth Chart Interpretation ebook cover">
         </div>
-    </section>
 
-</main>
+        <div class="opening-manuscript">
+            <p>Consider for a moment how you've learned astrology. Have you accumulated fragments of knowledge—scattered keywords, isolated planetary meanings, disconnected house interpretations—or have you discovered the underlying system that makes astrology coherent? <em>The Astrologer's Guide: Mastering Birth Chart Interpretation</em> represents not just another astrology book, but a complete framework for understanding natal astrology as an integrated language of symbolism.</p>
+            
+            <p>Normally priced at <strong>$8.99</strong>, this 500-page comprehensive guide is currently available <strong>free</strong> to readers committed to moving beyond fragmented astrology toward genuine chart synthesis and meaningful interpretation.</p>
+        </div>
 
-<footer>
-    <div class="footer-links">
-        <a href="/">Home</a> | 
-        <a href="/privacy.html">Privacy</a> | 
-        <a href="/cookies.html">Cookies</a> | 
-        <a href="/terms.html">Terms of Service</a> | 
-        <a href="/about.html">About</a> | 
-        <a href="/contact.html">Contact</a>
-    </div>
-    <p>© 2025 Planet-Astro.com — Published December 15, 2025</p>
-</footer>
+        <div class="book-insight">
+            <p><strong>The Integrated Approach:</strong> Unlike many astrology resources that present planets, signs, and houses as separate entities to be memorized, this guide teaches astrology as a living system. You'll learn not just what each symbol means, but how they interact, influence each other, and combine to tell coherent stories about human experience and potential.</p>
+        </div>
 
+        <section>
+            <h2>The Architecture of Astrological Wisdom</h2>
+            <p>Traditional astrology education often presents fragmented knowledge: learn planets, then signs, then houses, then aspects—but rarely teaches how to weave these threads into a coherent tapestry. <em>The Astrologer's Guide</em> addresses this fundamental gap by structuring learning around synthesis from the beginning.</p>
+            
+            <p>The book is organized not as a reference manual, but as a progressive curriculum. Each chapter builds on the previous one, with practical exercises demonstrating how to apply concepts to actual birth charts. Real-life case studies illustrate how theoretical knowledge translates into meaningful interpretation, showing the difference between reciting keywords and understanding why certain combinations produce specific life patterns.</p>
+        </section>
+
+        <div class="learning-grid">
+            <div class="learning-card">
+                <h3>Planetary Synthesis</h3>
+                <p>Learn how planets don't operate in isolation but form dynamic relationships. Understand how Mercury's communication style changes in different signs, how Venus' values interact with Mars' drive, and how Saturn's structure can either confine or support Jupiter's expansion.</p>
+            </div>
+            <div class="learning-card">
+                <h3>House Integration</h3>
+                <p>Discover how houses provide context for planetary expression. The same Venus placement means something different in the 2nd House versus the 7th House, not because Venus changes, but because the arena of life changes what Venus is expressing.</p>
+            </div>
+            <div class="learning-card">
+                <h3>Aspect Patterns</h3>
+                <p>Move beyond simple aspect lists to understanding aspect patterns as conversations between planetary energies. Learn how squares create dynamic tension for growth, how trines facilitate flow, and how oppositions create awareness through contrast.</p>
+            </div>
+        </div>
+
+        <div class="wisdom-quote">
+            True astrology isn't about memorizing what Mars means—it's about understanding what Mars wants to accomplish in Aries versus Pisces, in the 10th House versus the 4th, square Saturn versus trine Jupiter. The meaning emerges from the context, not from the isolated symbol.
+        </div>
+
+        <section class="readers-section">
+            <h3>For Whom This Guide Was Written</h3>
+            <p>This book serves multiple levels of astrological engagement simultaneously. Beginners appreciate the clear explanations and progressive structure. Intermediate students value the synthesis techniques that help them move beyond fragmented knowledge. Even experienced practitioners find value in the systematic approach to chart interpretation and the nuanced understanding of planetary interactions.</p>
+            
+            <p>The material respects both traditional and modern approaches, acknowledging that astrology has evolved while maintaining core principles that have remained relevant for centuries. Case studies include historical figures, contemporary examples, and anonymous charts to demonstrate universal principles across different contexts.</p>
+        </section>
+
+        <section>
+            <h2>Beyond Keywords: The Synthesis Method</h2>
+            <p>The book's distinctive contribution is its focus on synthesis methodology. You'll learn a step-by-step process for interpreting any birth chart:</p>
+            
+            <div style="margin: 40px 0 65px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <div style="background: rgba(255, 209, 102, 0.1); padding: 30px; border-radius: 12px; border: 2px solid rgba(255, 209, 102, 0.3); text-align: center;">
+                    <div style="width: 60px; height: 60px; background: var(--library-sage); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 1.8rem;">1</div>
+                    <h4 style="margin: 0 0 20px 0; color: var(--library-sage); font-size: 1.3rem;">Identify Dominant Patterns</h4>
+                    <p style="margin: 0; font-size: 1rem; line-height: 1.7;">Learn to recognize repeating themes, elemental balances, modal emphasis, and planetary groupings that reveal core life patterns.</p>
+                </div>
+                <div style="background: rgba(255, 209, 102, 0.1); padding: 30px; border-radius: 12px; border: 2px solid rgba(255, 209, 102, 0.3); text-align: center;">
+                    <div style="width: 60px; height: 60px; background: var(--library-sage); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 1.8rem;">2</div>
+                    <h4 style="margin: 0 0 20px 0; color: var(--library-sage); font-size: 1.3rem;">Contextualize Symbols</h4>
+                    <p style="margin: 0; font-size: 1rem; line-height: 1.7;">Understand how house placement modifies planetary expression and how sign placement colors planetary energy.</p>
+                </div>
+                <div style="background: rgba(255, 209, 102, 0.1); padding: 30px; border-radius: 12px; border: 2px solid rgba(255, 209, 102, 0.3); text-align: center;">
+                    <div style="width: 60px; height: 60px; background: var(--library-sage); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; font-size: 1.8rem;">3</div>
+                    <h4 style="margin: 0 0 20px 0; color: var(--library-sage); font-size: 1.3rem;">Weave the Narrative</h4>
+                    <p style="margin: 0; font-size: 1rem; line-height: 1.7;">Combine individual placements into coherent life stories, understanding how different chart elements support or challenge each other.</p>
+                </div>
+            </div>
+            
+            <p>This methodical approach transforms astrology from a collection of interesting facts into a practical tool for understanding human psychology, potential, and life patterns.</p>
+        </section>
+
+        <div class="mastery-cta">
+            <div class="cta-knowledge">
+                <h3>Access Complete Astrological Understanding</h3>
+                <p>The 500-page PDF edition of <em>The Astrologer's Guide: Mastering Birth Chart Interpretation</em> represents years of research, teaching experience, and practical application. This isn't a superficial introduction but a comprehensive resource designed to grow with your understanding.</p>
+                <p>While normally sold for $8.99, the guide is currently available free to readers who join Hermes Astrology's publication—an investment not in purchasing information, but in committing to the disciplined study that transforms information into wisdom.</p>
+                <a href="https://hermesastrology.substack.com/p/your-free-book" class="knowledge-btn">Receive Your Free Guide</a>
+            </div>
+            <div class="cta-guide">
+                <img src="/Astrologer_Guide.webp" alt="The Astrologer's Guide book cover">
+            </div>
+        </div>
+
+        <section>
+            <h2>The Legacy of Integrated Learning</h2>
+            <p>Ultimately, this guide represents more than just astrology instruction—it embodies an approach to learning that honors complexity while providing clarity. The goal isn't to produce astrologers who can recite definitions, but interpreters who can see connections, understand contexts, and appreciate the beautiful complexity of human experience as reflected in the birth chart.</p>
+            
+            <p>You're invited not merely to download a book, but to engage with a systematic approach to astrological understanding that has helped thousands move from fragmented knowledge to integrated wisdom. The invitation stands: take the structured path to genuine astrological comprehension.</p>
+        </section>
+
+        <div class="author-profile">
+            <img src="/logo_hermes.webp" alt="Hermes Astrology">
+            <div>
+                <p><strong>About Hermes Astrology</strong><br>
+                <strong>Trusted Astrology Expert with 15,000+ Followers</strong><br>
+                📧 10,000+ Substack Subscribers: <a href="https://hermesastrology.substack.com">https://hermesastrology.substack.com</a><br>
+                ✍️ 5,000+ Medium Followers: @HermesAstrology</p>
+                <p style="margin-top: 10px; font-style: italic; color: var(--accent-crimson);">"Decode Your Lifepath, Empower Your Present, and Light the Way for Others."</p>
+                <p>Hermes Astrology brings ancient astrological wisdom to the modern seeker, blending traditional techniques with modern psychological insight. With a global audience of over 15,000 followers, Hermes provides accurate, transformative guidance that helps individuals navigate life through planetary symbolism.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/privacy.html">Privacy</a>
+            <a href="/cookies.html">Cookies</a>
+            <a href="/terms.html">Terms of Service</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <p>© 2025 Planet-Astro.com — Published December 21, 2025</p>
+    </footer>
 </body>
 </html>
